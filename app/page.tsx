@@ -48,12 +48,13 @@ export default function HomePage() {
               >
                 SOLUTIONS
               </Link>
-              <div className="relative group">
-                <button className="flex items-center text-[#004080] hover:text-[#00A0B0] font-medium font-heading text-sm uppercase tracking-wide">
-                  INDUSTRIES
-                  <ChevronDown className="ml-1 h-4 w-4" />
-                </button>
-              </div>
+              <Link
+                href="/industries"
+                className="flex items-center text-[#004080] hover:text-[#00A0B0] font-medium font-heading text-sm uppercase tracking-wide"
+              >
+                INDUSTRIES
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </Link>
               <Link
                 href="/case-studies"
                 className="text-[#004080] hover:text-[#00A0B0] font-medium font-heading text-sm uppercase tracking-wide"
@@ -83,13 +84,18 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative h-[600px] overflow-hidden">
         <div className="absolute inset-0">
-          <Image
-            src="/precision-manufacturing.png"
-            alt="Advanced precision manufacturing and machine vision system"
-            fill
-            className="object-cover"
-            priority
-          />
+          <video autoPlay muted loop playsInline className="w-full h-full object-cover">
+            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero-automation-PaUmDSaA72gbKPuvsJmM06fu2pfGX5.mp4" type="video/mp4" />
+            <source src="/hero-automation.webm" type="video/webm" />
+            {/* Fallback image for browsers that don't support video */}
+            <Image
+              src="/precision-manufacturing.png"
+              alt="Advanced precision manufacturing and machine vision system"
+              fill
+              className="object-cover"
+              priority
+            />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
         </div>
 
