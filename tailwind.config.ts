@@ -26,24 +26,24 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#13315C",
-          foreground: "#F8FAFC",
+          DEFAULT: "#004080",
+          foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#E7EEF6",
-          foreground: "#13315C",
+          DEFAULT: "#00A0B0",
+          foreground: "#FFFFFF",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "#E7EEF6",
+          DEFAULT: "#F8FAFC",
           foreground: "#6B7280",
         },
         accent: {
-          DEFAULT: "#20CFCF",
-          foreground: "#F8FAFC",
+          DEFAULT: "#FFD700",
+          foreground: "#004080",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -74,8 +74,8 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        mono: ["Roboto Mono", "ui-monospace", "SFMono-Regular", "monospace"],
-        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+        heading: ["Archivo", "ui-monospace", "SFMono-Regular", "monospace"],
+        sans: ["Work Sans", "ui-sans-serif", "system-ui", "sans-serif"],
       },
     },
   },
