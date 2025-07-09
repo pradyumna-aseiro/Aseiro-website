@@ -117,47 +117,40 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <video autoPlay muted loop playsInline className="w-full h-full object-cover">
-            <source src="/hero-automation.mp4" type="video/mp4" />
-            <Image
-              src="/precision-manufacturing.png"
-              alt="Advanced precision manufacturing and machine vision system"
-              fill
-              className="object-cover"
-              priority
-            />
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent"></div>
-        </div>
+      {/* Hero Section with Video */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        {/* Video Background */}
+        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
+          <source src="/hero-automation.mp4" type="video/mp4" />
+          {/* Fallback image */}
+          <Image src="/hero-automation.jpg" alt="Industrial Automation" fill className="object-cover" priority />
+        </video>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">AUTOMATION & MACHINE VISION</p>
-          <h1 className="text-5xl lg:text-7xl font-light text-white mb-8 leading-tight">
-            See More with Vision,
-            <br />
-            <span className="text-[#FFD700]">Do More</span> with Automation
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+
+        {/* Content */}
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Advanced Industrial
+            <span className="block text-blue-400">Automation Solutions</span>
           </h1>
-          <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Transform your manufacturing with intelligent automation solutions that eliminate human error and ensure
-            consistent quality.
+          <p className="text-xl md:text-2xl mb-8 text-gray-200">
+            Transforming manufacturing with cutting-edge robotics, AI-driven quality control, and seamless integration
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-[#FFD700] hover:bg-[#FFD700]/90 text-[#004080] px-8 py-4 text-base font-bold"
-            >
-              Explore Solutions
-              <ArrowRight className="ml-2 h-4 w-4" />
+            <Button size="lg" asChild className="bg-blue-600 hover:bg-blue-700">
+              <Link href="/solutions">
+                Explore Solutions <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-[#004080] px-8 py-4 text-base bg-transparent"
+              asChild
+              className="border-white text-white hover:bg-white hover:text-gray-900 bg-transparent"
             >
-              Book Consultation
+              <Link href="/contact">Get Consultation</Link>
             </Button>
           </div>
         </div>
