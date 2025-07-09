@@ -138,14 +138,36 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10 pointer-events-none"></div>
 
         {/* Content */}
-        <div className="relative z-20 flex flex-col justify-center h-full px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white uppercase drop-shadow-lg">
-            TRANSFORMING MANUFACTURING WITH AUTOMATION & MACHINE VISION
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">AUTOMATION & MACHINE VISION</p>
+          <h1 className="text-5xl lg:text-7xl font-light text-white mb-8 leading-tight">
+            See More with Vision,
+            <br />
+            <span className="text-[#FFD700]">Do More</span> with Automation
           </h1>
-          {/* Add your buttons and subtitle here */}
+          <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+            Transform your manufacturing with intelligent automation solutions that eliminate human error and ensure
+            consistent quality.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="lg"
+              className="bg-[#FFD700] hover:bg-[#FFD700]/90 text-[#004080] px-8 py-4 text-base font-bold"
+            >
+              Explore Solutions
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-[#004080] px-8 py-4 text-base bg-transparent"
+            >
+              Book Consultation
+            </Button>
+          </div>
         </div>
       </section>
-      
+
       {/* Solutions Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
