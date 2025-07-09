@@ -13,7 +13,7 @@ export default function BenefitsSection() {
           {/* Benefit Card 1 */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg group h-[420px] flex items-end">
             <Image
-              src="/benefits-quality.jpg" 
+              src="/benefits-quality.png" 
               alt="Ensure Compliance"
               fill
               className="object-cover absolute inset-0 z-0"
@@ -31,7 +31,7 @@ export default function BenefitsSection() {
           {/* Benefit Card 2 */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg group h-[420px] flex items-end">
             <Image
-              src="/benefits-optimise.jpg"
+              src="/benefits-optimise.png"
               alt="Optimize"
               fill
               className="object-cover absolute inset-0 z-0"
@@ -49,7 +49,7 @@ export default function BenefitsSection() {
           {/* Benefit Card 3 */}
           <div className="relative rounded-3xl overflow-hidden shadow-lg group h-[420px] flex items-end">
             <Image
-              src="/benefits-reduce-costs.jpg"
+              src="/benefits-reduce-costs.png"
               alt="Reduce Costs"
               fill
               className="object-cover absolute inset-0 z-0"

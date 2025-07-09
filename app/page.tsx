@@ -16,8 +16,8 @@ export default function HomePage() {
         <VideoHero />
         <SolutionsCards />
         <BenefitsSection />
-        <IndustryCards />
         <GlobalPresence />
+        <IndustryCards />
         <CTASection />
       </main>
       <Footer />
