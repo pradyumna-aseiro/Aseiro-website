@@ -256,7 +256,7 @@ export default function HomePage() {
                 { name: "Automotive", icon: "🚗" },
                 { name: "Electronics", icon: "💻" },
                 { name: "Contruction", icon: "🏗️" },
-                { name: "Packaging & Logistics", icon: "📦" }
+                { name: "Packaging & Logistics", icon: "📦" },
                 { name: "Food & Beverage", icon: "🥤" },
               ].map((industry, index) => (
                 <div
