@@ -29,7 +29,7 @@ export default function SolutionsBenefits() {
           <h2 className="text-3xl lg:text-4xl font-light text-gray-900 mb-6">
             Why Choose
             <br />
-            Aseiro Solutions?
+            Aseiro's Solutions?
           </h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8">

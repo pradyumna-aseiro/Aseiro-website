@@ -34,6 +34,10 @@ export default function SolutionsGrid() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-20">
+          <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">OUR SOLUTIONS</p>
+          <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6"><span className="text-[#b59b1d]">Solutions</span> for Any Sector</h2>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
           {solutions.map((solution, index) => (
             <div key={index} id={solution.id} className="group">
