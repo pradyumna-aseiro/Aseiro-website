@@ -1,11 +1,11 @@
 // app/page.tsx  (or pages/index.tsx)
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import VideoHero from "@/components/VideoHero";
-import SolutionsCards from "@/components/SolutionsCards";
-import IndustryCards from "@/components/IndustryCards";
-import GlobalPresence from "@/components/GlobalPresence";
-import CTASection from "@/components/CTASection";
+import Header from "@/components/MainPage/Header";
+import Footer from "@/components/MainPage/Footer";
+import VideoHero from "@/components/MainPage/VideoHero";
+import SolutionsCards from "@/components/MainPage/SolutionsCards";
+import IndustryCards from "@/components/MainPage/IndustryCards";
+import GlobalPresence from "@/components/MainPage/GlobalPresence";
+import CTASection from "@/components/MainPage/CTASection";
 
 export default function HomePage() {
   return (
