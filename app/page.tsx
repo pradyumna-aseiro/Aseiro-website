@@ -173,7 +173,7 @@ export default function HomePage() {
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">Solutions for Any Sector</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {[
               {
                 title: "Machine Vision",
@@ -227,9 +227,25 @@ export default function HomePage() {
 
       {/* Industries Section */}
       <section className="py-24 bg-white relative">
-        <div className="absolute inset-0 opacity-2">
+        <div className="absolute inset-0 opacity-3">
           <Image src="/automation-facility.png" alt="Background" fill className="object-cover" />
         </div>
+
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/automation-facility.png"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/automation-overlay.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10 pointer-events-none"></div>
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -287,7 +303,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#004080] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">🇬🇧</span>
+                <span className="text-[#FFD700]">GB</span>
               </div>
               <h3 className="text-xl font-medium text-gray-900 mb-2">Sheffield, UK</h3>
               <p className="text-gray-600">
@@ -296,7 +312,7 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#004080] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">🇮🇳</span>
+                <span className="text-[#FFD700]">IN</span>
               </div>
               <h3 className="text-xl font-medium text-gray-900 mb-2">Hyderabad, India</h3>
               <p className="text-gray-600">
