@@ -122,7 +122,6 @@ export default function HomePage() {
         <div className="absolute inset-0 z-0">
           <video autoPlay muted loop playsInline className="w-full h-full object-cover">
             <source src="/hero-automation.mp4" type="video/mp4" />
-            <source src="/hero-automation.webm" type="video/webm" />
             <Image
               src="/precision-manufacturing.png"
               alt="Advanced precision manufacturing and machine vision system"
