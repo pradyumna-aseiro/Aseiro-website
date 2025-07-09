@@ -139,7 +139,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-16">
           <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">AUTOMATION & MACHINE VISION</p>
           <h1 className="text-5xl lg:text-7xl font-light text-white mb-8 leading-tight">
-            See More with Vision,
+            <span className="text-[#FFD700]">See More</span> with Vision,
             <br />
             <span className="text-[#FFD700]">Do More</span> with Automation
           </h1>
@@ -170,7 +170,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">OUR SOLUTIONS</p>
-            <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">Solutions for Any Sector</h2>
+            <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6"><span className="text-[#FFD700]">Solutions</span> for Any Sector</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -227,10 +227,6 @@ export default function HomePage() {
 
       {/* Industries Section */}
       <section className="py-24 bg-white relative">
-        <div className="absolute inset-0 opacity-3">
-          <Image src="/automation-facility.png" alt="Background" fill className="object-cover" />
-        </div>
-
         <video
           autoPlay
           muted
@@ -244,7 +240,7 @@ export default function HomePage() {
         </video>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent z-10 pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -292,7 +288,7 @@ export default function HomePage() {
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">GLOBAL PRESENCE</p>
+            <p className="text-sm uppercase tracking-wider text-[#FFD700] mb-4">GLOBAL PRESENCE</p>
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
               Local Expertise,
               <br />
