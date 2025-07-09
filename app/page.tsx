@@ -173,21 +173,21 @@ export default function HomePage() {
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">Solutions for Any Sector</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 justify-center">
             {[
               {
                 title: "Machine Vision",
-                image: "/precision-manufacturing.png",
+                image: "/machine-vision.png",
                 link: "/solutions#machine-vision",
               },
               {
                 title: "Robotics Integration",
-                image: "/automation-facility.png",
+                image: "/robotics.png",
                 link: "/solutions#robotics",
               },
               {
                 title: "Process Automation",
-                image: "/automation-facility.png",
+                image: "/automation.png",
                 link: "/solutions#process-automation",
               },
             ].map((solution, index) => (
