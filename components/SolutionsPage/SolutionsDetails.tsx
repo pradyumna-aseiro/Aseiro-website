@@ -54,38 +54,37 @@ export default function SolutionsDetails() {
 
           {/* Robotics Integration Detail */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-1 lg:order-2">
-              <div className="w-16 h-16 bg-[#004080] rounded-2xl flex items-center justify-center mb-6">
-                <Cog className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-3xl font-light text-gray-900 mb-6">Robotics Integration</h3>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Seamlessly integrate robotic systems into your existing production lines to increase throughput, improve precision, and reduce labor costs while maintaining flexibility.
-              </p>
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  "Collaborative Robots",
-                  "Warehouse robots",
-                  "Custom End Effectors",
-                  "Safety Systems",
-                  "Path Planning",
-                  "Multi-Robot Coordination",
-                ].map((feature, index) => (
-                  <div key={index} className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-[#004080] mr-3" />
-                    <span className="text-gray-700">{feature}</span>
-                  </div>
-                ))}
-              </div>
+            <div className="w-16 h-16 bg-[#004080] rounded-2xl flex items-center justify-center mb-6">
+            <Cog className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-3xl font-light text-gray-900 mb-6">Robotics Integration</h3>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            Seamlessly integrate robotic systems into your existing production lines to increase throughput, improve precision, and reduce labor costs while maintaining flexibility.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+            {[
+                "Collaborative Robots",
+                "Warehouse robots",
+                "Custom End Effectors",
+                "Safety Systems",
+                "Path Planning",
+                "Multi-Robot Coordination",
+            ].map((feature, index) => (
+                <div key={index} className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-[#004080] mr-3" />
+                <span className="text-gray-700">{feature}</span>
+                </div>
+            ))}
+            </div>
             </div>
             <div className="relative">
-              <Image
+                <Image
                 src="/solutions-warehouse.png"
                 alt="Robotics Integration"
                 width={600}
                 height={400}
                 className="rounded-2xl shadow-xl"
-              />
+                />
             </div>
           </div>
 
