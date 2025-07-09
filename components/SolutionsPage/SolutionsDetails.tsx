@@ -54,15 +54,6 @@ export default function SolutionsDetails() {
 
           {/* Robotics Integration Detail */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1 relative">
-              <Image
-                src="/solutions-warehouse.png"
-                alt="Robotics Integration"
-                width={600}
-                height={400}
-                className="rounded-2xl shadow-xl"
-              />
-            </div>
             <div className="order-1 lg:order-2">
               <div className="w-16 h-16 bg-[#004080] rounded-2xl flex items-center justify-center mb-6">
                 <Cog className="h-8 w-8 text-white" />
@@ -87,13 +78,22 @@ export default function SolutionsDetails() {
                 ))}
               </div>
             </div>
+            <div className="relative">
+              <Image
+                src="/solutions-warehouse.png"
+                alt="Robotics Integration"
+                width={600}
+                height={400}
+                className="rounded-2xl shadow-xl"
+              />
+            </div>
           </div>
 
           {/* Process Automation Detail */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
                 <div className="w-16 h-16 bg-[#004080] rounded-2xl flex items-center justify-center mb-6">
-                <Cog className="h-8 w-8 text-white" />
+                    <Cog className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-3xl font-light text-gray-900 mb-6">Process Automation</h3>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
