@@ -58,106 +58,37 @@ export default function HomePage() {
       </div>
 
       {/* Header */}
-      <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center">
-              <Link href="/" className="flex items-center">
-                <Image
-                  src="/aseiro-logo-main.png"
-                  alt="Aseiro Industries"
-                  width={180}
-                  height={72}
-                  className="h-12 w-auto"
-                />
-              </Link>
-            </div>
-            <nav className="hidden md:flex space-x-12">
-              <Link
-                href="/"
-                className="text-[#004080] font-medium text-sm tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[#FFD700] after:transform after:scale-x-100"
-              >
-                Home
-              </Link>
-              <Link
-                href="/solutions"
-                className="text-gray-600 hover:text-[#004080] font-medium text-sm tracking-wide transition-colors"
-              >
-                Solutions
-              </Link>
-              <Link
-                href="/industries"
-                className="text-gray-600 hover:text-[#004080] font-medium text-sm tracking-wide transition-colors"
-              >
-                Industries
-              </Link>
-              <Link
-                href="/case-studies"
-                className="text-gray-600 hover:text-[#004080] font-medium text-sm tracking-wide transition-colors"
-              >
-                Case Studies
-              </Link>
-              <Link
-                href="/about"
-                className="text-gray-600 hover:text-[#004080] font-medium text-sm tracking-wide transition-colors"
-              >
-                About
-              </Link>
-              <Link
-                href="/contact"
-                className="text-gray-600 hover:text-[#004080] font-medium text-sm tracking-wide transition-colors"
-              >
-                Contact
-              </Link>
-            </nav>
-            <Button className="bg-[#004080] hover:bg-[#004080]/90 text-white px-6 py-2 text-sm font-medium">
-              Get Started
-            </Button>
-          </div>
+      <section className="relative h-[600px] overflow-hidden">
+        <div className="absolute inset-0">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src="/hero-automation.mp4" type="video/mp4" />
+            <source src="/hero-automation.webm" type="video/webm" />
+            {/* Fallback image for browsers that don't support video */}
+            <Image
+              src="/precision-manufacturing.png"
+              alt="Advanced precision manufacturing and machine vision system"
+              fill
+              className="object-cover"
+              priority
+            />
+          </video>
+          {/* The overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
         </div>
-      </header>
 
-      {/* Hero Section with Video */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Video Background */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        >
-          <source src="/hero-automation.mp4" type="video/mp4" />
-          {/* Fallback image */}
-          {/* If you want to support fallback, use absolute Image with z-0 as well */}
-        </video>
-
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
-
-        {/* Content */}
-        <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Advanced Industrial
-            <span className="block text-blue-400">Automation Solutions</span>
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Transforming manufacturing with cutting-edge robotics, AI-driven quality control, and seamless integration
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild className="bg-blue-600 hover:bg-blue-700">
-              <Link href="/solutions">
-                Explore Solutions <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="border-white text-white hover:bg-white hover:text-gray-900 bg-transparent"
-            >
-              <Link href="/contact">Get Consultation</Link>
-            </Button>
+        {/* Hero Content */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+          <div>
+            <h1 className="text-4xl lg:text-5xl font-bold text-white font-heading uppercase leading-tight">
+              TRANSFORMING MANUFACTURING WITH AUTOMATION & MACHINE VISION
+            </h1>
+            {/* Add your hero buttons/text here */}
           </div>
         </div>
       </section>
