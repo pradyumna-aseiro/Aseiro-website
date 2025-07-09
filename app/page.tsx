@@ -118,7 +118,7 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section with Video */}
-      <section className="relative h-[600px] min-h-[70vh] overflow-hidden mt-16">
+      <section className="relative h-[600px] min-h-[70vh] overflow-hidden">
         {/* Video Background */}
         <video
           autoPlay
@@ -136,7 +136,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10 pointer-events-none"></div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-16">
           <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">AUTOMATION & MACHINE VISION</p>
           <h1 className="text-5xl lg:text-7xl font-light text-white mb-8 leading-tight">
             See More with Vision,
@@ -256,7 +256,7 @@ export default function HomePage() {
                 { name: "Automotive", icon: "🚗" },
                 { name: "Electronics", icon: "💻" },
                 { name: "Contruction", icon: "🏗️" },
-                { name: "Packaging & Logistics", icon: "📦" }
+                { name: "Packaging & Logistics", icon: "📦" },
                 { name: "Food & Beverage", icon: "🥤" },
               ].map((industry, index) => (
                 <div
