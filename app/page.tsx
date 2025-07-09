@@ -227,7 +227,7 @@ export default function HomePage() {
 
       {/* Industries Section */}
       <section className="py-24 bg-white relative">
-        <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 opacity-2">
           <Image src="/automation-facility.png" alt="Background" fill className="object-cover" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
