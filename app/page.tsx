@@ -133,7 +133,7 @@ export default function HomePage() {
         </video>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent z-10 pointer-events-none"></div>
 
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-16">
@@ -244,18 +244,18 @@ export default function HomePage() {
         </video>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent z-10 pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">INDUSTRIES WE SERVE</p>
-              <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-8 leading-tight">
+              <p className="text-sm uppercase tracking-wider text-[#FFD700] mb-4">INDUSTRIES WE SERVE</p>
+              <h2 className="text-4xl lg:text-5xl font-light text-white mb-8 leading-tight">
                 Tailored Solutions
                 <br />
                 for Every Sector
               </h2>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-200 mb-8 leading-relaxed">
                 From pharmaceutical precision to automotive efficiency, we deliver industry-specific automation
                 solutions that meet regulatory requirements and exceed performance expectations.
               </p>
