@@ -118,7 +118,7 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section with Video */}
-      <section className="relative h-[600px] min-h-[70vh] overflow-hidden">
+      <section className="relative h-[600px] min-h-[70vh] overflow-hidden mt-16">
         {/* Video Background */}
         <video
           autoPlay
@@ -129,8 +129,6 @@ export default function HomePage() {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/hero-automation.mp4" type="video/mp4" />
-          {/* Optional webm fallback */}
-          {/* <source src="/hero-automation.webm" type="video/webm" /> */}
           Your browser does not support the video tag.
         </video>
 
@@ -150,19 +148,18 @@ export default function HomePage() {
             consistent quality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-[#FFD700] hover:bg-[#FFD700]/90 text-[#004080] px-8 py-4 text-base font-bold"
-            >
-              Explore Solutions
-              <ArrowRight className="ml-2 h-4 w-4" />
+            <Button size="lg" asChild className="bg-blue-600 hover:bg-blue-700">
+              <Link href="/solutions">
+                Explore Solutions <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-[#004080] px-8 py-4 text-base bg-transparent"
+              asChild
+              className="border-white text-white hover:bg-white hover:text-gray-900 bg-transparent"
             >
-              Book Consultation
+              <Link href="/contact">Get Consultation</Link>
             </Button>
           </div>
         </div>
@@ -187,11 +184,6 @@ export default function HomePage() {
                 title: "Robotics Integration",
                 image: "/automation-facility.png",
                 link: "/solutions#robotics",
-              },
-              {
-                title: "Quality Control",
-                image: "/precision-manufacturing.png",
-                link: "/solutions#quality-control",
               },
               {
                 title: "Process Automation",
@@ -230,61 +222,6 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Pharmaceutical",
-                image: "/precision-manufacturing.png",
-                link: "/industries#pharmaceutical",
-              },
-              {
-                title: "Automotive",
-                image: "/automation-facility.png",
-                link: "/industries#automotive",
-              },
-              {
-                title: "Food & Beverage",
-                image: "/precision-manufacturing.png",
-                link: "/industries#food-beverage",
-              },
-              {
-                title: "Electronics",
-                image: "/automation-facility.png",
-                link: "/industries#electronics",
-              },
-            ].map((industry, index) => (
-              <Link key={index} href={industry.link} className="group block">
-                <div className="relative h-64 rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:-translate-y-2">
-                  <Image
-                    src={industry.image || "/placeholder.svg"}
-                    alt={industry.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent transition-all duration-500 group-hover:from-black/90 group-hover:via-black/40"></div>
-                  <div className="absolute inset-0 bg-[#00A0B0]/0 transition-all duration-500 group-hover:bg-[#00A0B0]/20"></div>
-                  <div className="absolute inset-0 flex flex-col justify-between p-6">
-                    <div className="flex justify-end">
-                      <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 transform translate-x-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-0">
-                        <ArrowRight className="h-4 w-4 text-white" />
-                      </div>
-                    </div>
-                    <div className="transform transition-all duration-500 group-hover:translate-y-0 translate-y-2">
-                      <h3 className="text-2xl font-light text-white mb-4 transform transition-all duration-500 group-hover:text-[#00A0B0]">
-                        {industry.title}
-                      </h3>
-                      <div className="inline-flex items-center bg-black/50 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-500 group-hover:bg-[#00A0B0] group-hover:text-white group-hover:scale-110 group-hover:shadow-lg">
-                        <ArrowRight className="mr-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                        Read More
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#00A0B0]/50"></div>
-                </div>
-              </Link>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -317,8 +254,10 @@ export default function HomePage() {
               {[
                 { name: "Pharmaceutical", icon: "💊" },
                 { name: "Automotive", icon: "🚗" },
-                { name: "Food & Beverage", icon: "🥤" },
                 { name: "Electronics", icon: "💻" },
+                { name: "Contruction", icon: "🏗️" },
+                { name: "Packaging & Logistics", icon: "📦" }
+                { name: "Food & Beverage", icon: "🥤" },
               ].map((industry, index) => (
                 <div
                   key={index}
@@ -435,11 +374,6 @@ export default function HomePage() {
                 </li>
                 <li>
                   <Link href="/solutions" className="text-gray-600 hover:text-[#004080]">
-                    Turnkey Systems
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/solutions" className="text-gray-600 hover:text-[#004080]">
                     Process Optimization
                   </Link>
                 </li>
@@ -461,12 +395,22 @@ export default function HomePage() {
                 </li>
                 <li>
                   <Link href="/industries" className="text-gray-600 hover:text-[#004080]">
-                    Food & Beverage
+                    Construction
                   </Link>
                 </li>
                 <li>
                   <Link href="/industries" className="text-gray-600 hover:text-[#004080]">
                     Electronics
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/industries" className="text-gray-600 hover:text-[#004080]">
+                    Packaging & Logistics
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/industries" className="text-gray-600 hover:text-[#004080]">
+                    Food & Beverage
                   </Link>
                 </li>
               </ul>
@@ -491,7 +435,14 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
-                  <span className="text-gray-600">pradyumna@aseiro.in</span>
+                <div className="flex items-center space-x-4">
+                  <a
+                    href="mailto:pradyumna@aseiro.in"
+                    className="text-white underline hover:text-gray-200 transition-colors"
+                  >
+                    pradyumna@aseiro.in
+                  </a>
+                </div>
                 </li>
               </ul>
             </div>
