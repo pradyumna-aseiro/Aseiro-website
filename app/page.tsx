@@ -11,7 +11,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
-              <span className="font-bold text-[#FFD700]">#SeeMoreDoMore</span>
+              <span className="font-bold text-[#b59b1d]">#SeeMoreDoMore</span>
               <div className="flex items-center space-x-2">
                 <a
                   href="https://linkedin.com/company/aseiro-industries"
@@ -75,7 +75,7 @@ export default function HomePage() {
             <nav className="hidden md:flex space-x-12">
               <Link
                 href="/"
-                className="text-[#004080] font-medium text-sm tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[#FFD700] after:transform after:scale-x-100"
+                className="text-[#004080] font-medium text-sm tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[#b59b1d] after:transform after:scale-x-100"
               >
                 Home
               </Link>
@@ -139,9 +139,9 @@ export default function HomePage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-16">
           <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">AUTOMATION & MACHINE VISION</p>
           <h1 className="text-5xl lg:text-7xl font-light text-white mb-8 leading-tight">
-            <span className="text-[#FFD700]">See More</span> with Vision,
+            See More with Vision,
             <br />
-            <span className="text-[#FFD700]">Do More</span> with Automation
+            <span className="text-[#b59b1d]">Do More</span> with Automation
           </h1>
           <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
             Transform your manufacturing with intelligent automation solutions that eliminate human error and ensure
@@ -170,7 +170,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">OUR SOLUTIONS</p>
-            <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6"><span className="text-[#FFD700]">Solutions</span> for Any Sector</h2>
+            <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6"><span className="text-[#b59b1d]">Solutions</span> for Any Sector</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -208,16 +208,16 @@ export default function HomePage() {
                       </div>
                     </div>
                     <div className="transform transition-all duration-500 group-hover:translate-y-0 translate-y-2">
-                      <h3 className="text-2xl font-light text-white mb-4 transform transition-all duration-500 group-hover:text-[#FFD700]">
+                      <h3 className="text-2xl font-light text-white mb-4 transform transition-all duration-500 group-hover:text-[#b59b1d]">
                         {solution.title}
                       </h3>
-                      <div className="inline-flex items-center bg-black/50 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-500 group-hover:bg-[#FFD700] group-hover:text-[#004080] group-hover:scale-110 group-hover:shadow-lg">
+                      <div className="inline-flex items-center bg-black/50 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-500 group-hover:bg-[#b59b1d] group-hover:text-[#004080] group-hover:scale-110 group-hover:shadow-lg">
                         <ArrowRight className="mr-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                         Read More
                       </div>
                     </div>
                   </div>
-                  <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#FFD700]/50"></div>
+                  <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#b59b1d]/50"></div>
                 </div>
               </Link>
             ))}
@@ -240,12 +240,12 @@ export default function HomePage() {
         </video>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-transparent z-10 pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-sm uppercase tracking-wider text-[#FFD700] mb-4">INDUSTRIES WE SERVE</p>
+              <p className="text-sm uppercase tracking-wider text-[#b59b1d] mb-4">INDUSTRIES WE SERVE</p>
               <h2 className="text-4xl lg:text-5xl font-light text-white mb-8 leading-tight">
                 Tailored Solutions
                 <br />
@@ -288,7 +288,7 @@ export default function HomePage() {
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <p className="text-sm uppercase tracking-wider text-[#FFD700] mb-4">GLOBAL PRESENCE</p>
+            <p className="text-sm uppercase tracking-wider text-[#b59b1d] mb-4">GLOBAL PRESENCE</p>
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
               Local Expertise,
               <br />
@@ -299,7 +299,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#004080] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-[#FFD700]">GB</span>
+                <span className="text-[#b59b1d]">GB</span>
               </div>
               <h3 className="text-xl font-medium text-gray-900 mb-2">Sheffield, UK</h3>
               <p className="text-gray-600">
@@ -308,7 +308,7 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#004080] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-[#FFD700]">IN</span>
+                <span className="text-[#b59b1d]">IN</span>
               </div>
               <h3 className="text-xl font-medium text-gray-900 mb-2">Hyderabad, India</h3>
               <p className="text-gray-600">
@@ -325,7 +325,7 @@ export default function HomePage() {
           <Image src="/precision-manufacturing.png" alt="Background" fill className="object-cover" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm uppercase tracking-wider text-[#FFD700] mb-4">GET STARTED</p>
+          <p className="text-sm uppercase tracking-wider text-[#b59b1d] mb-4">GET STARTED</p>
           <h2 className="text-4xl lg:text-5xl font-light text-white mb-8 leading-tight">
             Ready to Transform
             <br />
@@ -338,7 +338,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-[#FFD700] hover:bg-[#FFD700]/90 text-[#004080] px-8 py-4 text-base font-medium"
+              className="bg-[#b59b1d] hover:bg-[#b59b1d]/90 text-[#004080] px-8 py-4 text-base font-medium"
             >
               Book Free Consultation
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -386,7 +386,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <Link href="/solutions" className="text-gray-600 hover:text-[#004080]">
-                    Process Optimization
+                    Process Automation
                   </Link>
                 </li>
               </ul>
