@@ -3,6 +3,7 @@ import Header from "@/components/MainPage/Header";
 import Footer from "@/components/MainPage/Footer";
 import VideoHero from "@/components/MainPage/VideoHero";
 import SolutionsCards from "@/components/MainPage/SolutionsCards";
+import BenefitsSection from "@/components/MainPage/BenefitsSection";
 import IndustryCards from "@/components/MainPage/IndustryCards";
 import GlobalPresence from "@/components/MainPage/GlobalPresence";
 import CTASection from "@/components/MainPage/CTASection";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <main>
         <VideoHero />
         <SolutionsCards />
+        <BenefitsSection />
         <IndustryCards />
         <GlobalPresence />
         <CTASection />
