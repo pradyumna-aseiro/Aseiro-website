@@ -120,17 +120,23 @@ export default function HomePage() {
       {/* Hero Section with Video */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Video Background */}
-        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        >
           <source src="/hero-automation.mp4" type="video/mp4" />
           {/* Fallback image */}
-          <Image src="/hero-automation.jpg" alt="Industrial Automation" fill className="object-cover" priority />
+          {/* If you want to support fallback, use absolute Image with z-0 as well */}
         </video>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
 
         {/* Content */}
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+        <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Advanced Industrial
             <span className="block text-blue-400">Automation Solutions</span>
