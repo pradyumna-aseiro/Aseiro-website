@@ -136,7 +136,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent z-10 pointer-events-none"></div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-16">
+        <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-16">
           <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">AUTOMATION & MACHINE VISION</p>
           <h1 className="text-5xl lg:text-7xl font-light text-white mb-8 leading-tight">
             See More with Vision,
@@ -240,9 +240,9 @@ export default function HomePage() {
         </video>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/10 to-transparent z-10 pointer-events-none"></div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-sm uppercase tracking-wider text-[#b59b1d] mb-4">INDUSTRIES WE SERVE</p>
