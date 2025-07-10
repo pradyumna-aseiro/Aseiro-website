@@ -32,7 +32,7 @@ export default function OurStorySection() {
           </div>
           <div className="relative">
             <Image
-              src="/automation-facility.png"
+              src="/about-details.png"
               alt="Aseiro Industries facility"
               width={600}
               height={400}
