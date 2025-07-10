@@ -8,7 +8,7 @@ export default function OurStorySection() {
           <div>
             <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">OUR STORY</p>
             <h2 className="text-3xl lg:text-4xl font-light text-gray-900 mb-8 leading-tight">
-              From <span className="text-[#FFD700]">Vision</span> to
+              From <span className="text-[#b59b1d]">Vision</span> to
               <br />
               Reality
             </h2>

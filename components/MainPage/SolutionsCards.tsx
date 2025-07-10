@@ -36,7 +36,9 @@ export default function SolutionsGrid() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">OUR SOLUTIONS</p>
-          <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6"><span className="text-[#b59b1d]">Solutions</span> for Any Sector</h2>
+          <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
+            <span className="text-[#b59b1d]">Solutions</span> for Any Sector
+          </h2>
           <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-700 font-light">
             <span className="font-semibold text-[#b59b1d]">Aseiro’s automation solutions</span> combine advanced machine vision, robotics integration, and end-to-end process automation to empower your business. We deliver tailored systems for quality control, efficiency, and digital transformation—enabling manufacturers of all sizes to unlock the full potential of Industry 4.0.
           </p>
@@ -77,10 +79,13 @@ export default function SolutionsGrid() {
                         </div>
                       ))}
                     </div>
-                    <div className="inline-flex items-center bg-black/50 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-500 group-hover:bg-[#b59b1d] group-hover:text-[#004080] group-hover:scale-110 group-hover:shadow-lg">
+                    <a
+                      href={`#${solution.id}`}
+                      className="inline-flex items-center bg-black/50 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-500 group-hover:bg-[#b59b1d] group-hover:text-[#004080] group-hover:scale-110 group-hover:shadow-lg mt-2"
+                    >
                       <Target className="mr-2 h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
                       Learn More
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#b59b1d]/50"></div>

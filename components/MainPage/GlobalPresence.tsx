@@ -12,43 +12,43 @@ export default function GlobalPresence() {
             One Vision
           </h2>
         </div>
-        <div className="grid md:grid-cols-2 gap-12">
-          <Card className="bg-gray-50 border-0 p-8">
+        <div className="grid md:grid-cols-2 gap-8">
+          <Card className="bg-gray-50 border-0 rounded-2xl shadow-md p-8 flex flex-col justify-between h-full">
             <div className="text-center">
-              <div className="w-20 h-20 bg-[#004080] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-[#FFD700]">GB</span>
+              <div className="w-16 h-16 bg-[#004080] border-4 border-[#b59b1d] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-[#b59b1d] text-lg font-semibold">GB</span>
               </div>
-              <h3 className="text-2xl font-light text-gray-900 mb-4">Sheffield, United Kingdom</h3>
-              <div className="space-y-3 text-gray-600">
-                <p className="font-medium">Aseiro Industries Ltd</p>
-                <p>14-18 Halford House</p>
-                <p>Sheffield S1 2AZ</p>
-                <p>United Kingdom</p>
-              </div>
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <p className="text-sm text-gray-500">
-                  Serving UK, Europe with local engineering support and regulatory compliance expertise.
-                </p>
+              <h3 className="text-xl font-medium text-gray-900 mb-2">Sheffield, United Kingdom</h3>
+              <div className="flex flex-col items-center gap-1 text-gray-700 text-base leading-tight">
+                <span className="font-semibold">Aseiro Industries Ltd</span>
+                <span>14-18 Halford House</span>
+                <span>Sheffield S1 2AZ</span>
+                <span>United Kingdom</span>
               </div>
             </div>
+            <div className="mt-6 pt-6 border-t border-gray-200 text-center">
+              <p className="text-sm text-gray-500">
+                Serving UK, Europe with local engineering support and regulatory compliance expertise.
+              </p>
+            </div>
           </Card>
-          <Card className="bg-gray-50 border-0 p-8">
+          <Card className="bg-gray-50 border-0 rounded-2xl shadow-md p-8 flex flex-col justify-between h-full">
             <div className="text-center">
-              <div className="w-20 h-20 bg-[#004080] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-[#FFD700]">IN</span>
+              <div className="w-16 h-16 bg-[#004080] border-4 border-[#b59b1d] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-[#b59b1d] text-lg font-semibold">IN</span>
               </div>
-              <h3 className="text-2xl font-light text-gray-900 mb-4">Hyderabad, India</h3>
-              <div className="space-y-3 text-gray-600">
-                <p className="font-medium">Aseiro Industries Pvt Ltd</p>
-                <p>Meghana Eastend Apartment, 10-2-2/10,</p>
-                <p>Nehru Nagar Colony, West Marredpally, Secunderabad,</p>
-                <p>Hyderabad, Telangana, India, 500026</p>
+              <h3 className="text-xl font-medium text-gray-900 mb-2">Hyderabad, India</h3>
+              <div className="flex flex-col items-center gap-1 text-gray-700 text-base leading-tight">
+                <span className="font-semibold">Aseiro Industries Pvt Ltd</span>
+                <span>Meghana Eastend Apartment, 10-2-2/10</span>
+                <span>Nehru Nagar Colony, West Marredpally, Secunderabad</span>
+                <span>Hyderabad, Telangana, India, 500026</span>
               </div>
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <p className="text-sm text-gray-500">
-                  R&D hub providing cost-effective solutions and engineering capabilities for global markets.
-                </p>
-              </div>
+            </div>
+            <div className="mt-6 pt-6 border-t border-gray-200 text-center">
+              <p className="text-sm text-gray-500">
+                R&D hub providing cost-effective solutions and engineering capabilities for global markets.
+              </p>
             </div>
           </Card>
         </div>

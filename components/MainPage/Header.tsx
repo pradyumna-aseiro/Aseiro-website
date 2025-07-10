@@ -59,9 +59,11 @@ export default function Header() {
               );
             })}
           </nav>
-          <Button className="bg-[#004080] hover:bg-[#004080]/90 text-white px-6 py-2 text-sm font-medium">
-            Get Started
-          </Button>
+          <Link href="/contact">
+            <Button className="bg-[#004080] hover:bg-[#004080]/90 text-white px-6 py-2 text-sm font-medium">
+              Get Started
+            </Button>
+          </Link>
         </div>
       </div>
     </header>

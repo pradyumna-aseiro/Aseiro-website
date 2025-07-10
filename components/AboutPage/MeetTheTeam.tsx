@@ -71,31 +71,35 @@ export default function MeetTheTeam() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-light text-center mb-12">
-          <span className="text-[#FFD700]">Meet Our Team</span>
+          <span className="text-[#b59b1d]">Meet Our Team</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {team.map((member, idx) => (
             <Card
               key={idx}
-              className="bg-white shadow hover:shadow-lg rounded-2xl border-2 border-[#FFD700] flex flex-col items-center text-center p-6 transition-all duration-300"
+              className="bg-white shadow hover:shadow-lg rounded-2xl border-2 border-[#b59b1d] flex flex-col items-center text-center py-8 px-6 min-h-[430px] transition-all duration-300"
             >
-              <Image
-                src={member.img}
-                alt={member.name}
-                width={96}
-                height={96}
-                className="rounded-full border-4 border-[#FFD700] mb-4 object-cover"
-              />
+              <div className="flex justify-center w-full mb-4">
+                <div className="w-[120px] h-[120px] rounded-full border-4 border-[#b59b1d] overflow-hidden bg-white flex items-center justify-center">
+                  <Image
+                    src={member.img}
+                    alt={member.name}
+                    width={120}
+                    height={120}
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+              </div>
               <div className="font-semibold text-lg text-[#004080]">{member.name}</div>
               <div className="text-gray-700 text-sm mb-1">{member.title}</div>
-              <div className="text-xs font-medium text-[#FFD700] mb-2">{member.specialty}</div>
+              <div className="text-xs font-medium text-[#b59b1d] mb-2">{member.specialty}</div>
               <div className="text-gray-600 text-sm mb-4">{member.summary}</div>
               <div className="flex justify-center gap-4 mt-auto">
                 <a href={member.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <FaLinkedin className="w-5 h-5 text-[#0077B5] hover:text-[#004080]" />
                 </a>
                 <a href={`mailto:${member.email}`} aria-label="Email">
-                  <FaEnvelope className="w-5 h-5 text-[#004080] hover:text-[#FFD700]" />
+                  <FaEnvelope className="w-5 h-5 text-[#004080] hover:text-[#b59b1d]" />
                 </a>
               </div>
             </Card>

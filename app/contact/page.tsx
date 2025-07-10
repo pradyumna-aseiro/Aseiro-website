@@ -15,7 +15,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
-              <span className="font-bold text-[#FFD700]">#SeeMoreDoMore</span>
+              <span className="font-bold text-[#b59b1d]">#SeeMoreDoMore</span>
               <div className="flex items-center space-x-2">
                 <a
                   href="https://linkedin.com/company/aseiro-industries"
@@ -104,7 +104,7 @@ export default function ContactPage() {
               </Link>
               <Link
                 href="/contact"
-                className="text-[#004080] font-medium text-sm tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[#FFD700] after:transform after:scale-x-100"
+                className="text-[#004080] font-medium text-sm tracking-wide relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[#b59b1d] after:transform after:scale-x-100"
               >
                 Contact
               </Link>
@@ -342,7 +342,7 @@ export default function ContactPage() {
       {/* CTA Section */}
       <section className="py-20 bg-[#004080]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm uppercase tracking-wider text-[#FFD700] mb-4">QUICK START</p>
+          <p className="text-sm uppercase tracking-wider text-[#b59b1d] mb-4">QUICK START</p>
           <h2 className="text-3xl lg:text-4xl font-light text-white mb-8 leading-tight">
             Need Immediate
             <br />
@@ -355,7 +355,7 @@ export default function ContactPage() {
             <a href="tel:+917893715471">
               <Button
                 size="lg"
-                className="bg-[#FFD700] hover:bg-[#FFD700]/90 text-[#004080] px-8 py-4 text-base font-medium"
+                className="bg-[#b59b1d] hover:bg-[#b59b1d]/90 text-[#004080] px-8 py-4 text-base font-medium"
               >
                 Call Now
                 <Phone className="ml-2 h-4 w-4" />

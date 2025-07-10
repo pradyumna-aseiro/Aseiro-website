@@ -44,7 +44,7 @@ export default function IndustryCards() {
               { name: "Pharmaceutical", icon: "💊" },
               { name: "Automotive", icon: "🚗" },
               { name: "Electronics", icon: "💻" },
-              { name: "Contruction", icon: "🏗️" },
+              { name: "Construction", icon: "🏗️" },
               { name: "Packaging & Logistics", icon: "📦" },
               { name: "Food & Beverage", icon: "🥤" },
             ].map((industry, index) => (

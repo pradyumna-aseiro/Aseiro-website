@@ -30,13 +30,13 @@ export default function WhatSetsUsApart() {
         <div className="text-center mb-16">
           <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">WHAT SETS US APART</p>
           <h2 className="text-3xl lg:text-4xl font-light text-gray-900 mb-6">
-            Why Choose <span className="text-[#FFD700]">ASEIRO</span>?
+            Why Choose <span className="text-[#b59b1d]">ASEIRO</span>?
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10">
             Our approach combines deep industry expertise, a passion for innovation, and a relentless focus on delivering automation solutions for every client.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {items.map((item, idx) => (
             <Card key={idx} className="bg-gray-50 border-0 shadow-sm hover:shadow-md transition-shadow">
               <CardHeader className="text-center">

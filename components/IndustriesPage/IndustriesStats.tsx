@@ -34,7 +34,7 @@ export default function IndustriesStats() {
         <div className="text-center mb-16">
           <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">PROVEN RESULTS</p>
           <h2 className="text-3xl lg:text-4xl font-light text-gray-900 mb-6">
-            Industry <span className="text-[#FFD700]">Impact</span><br />by the Numbers
+            Industry <span className="text-[#b59b1d]">Impact</span><br />by the Numbers
           </h2>
         </div>
         <div className="grid md:grid-cols-4 gap-8">

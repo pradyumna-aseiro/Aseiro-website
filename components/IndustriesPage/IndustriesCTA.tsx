@@ -7,7 +7,7 @@ export default function IndustriesCTA() {
   return (
     <section className="py-20 bg-[#004080]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-sm uppercase tracking-wider text-[#FFD700] mb-4">GET STARTED</p>
+        <p className="text-sm uppercase tracking-wider text-[#b59b1d] mb-4">GET STARTED</p>
         <h2 className="text-3xl lg:text-4xl font-light text-white mb-8 leading-tight">
           Ready to Transform<br />Your Industry?
         </h2>
@@ -18,7 +18,7 @@ export default function IndustriesCTA() {
           <Link href="/contact">
             <Button
               size="lg"
-              className="bg-[#FFD700] hover:bg-[#FFD700]/90 text-[#004080] px-8 py-4 text-base font-medium"
+              className="bg-[#b59b1d] hover:bg-[#b59b1d]/90 text-[#004080] px-8 py-4 text-base font-medium"
             >
               Schedule Consultation
               <ArrowRight className="ml-2 h-4 w-4" />
