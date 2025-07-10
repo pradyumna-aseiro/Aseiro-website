@@ -1,63 +1,85 @@
 // components/IndustryPartners.tsx
 
 import Image from "next/image";
+import Link from "next/link";
 
 const partners = [
+  { name: "VAP", logo: "/Partners/vap.png", alt: "Vinayak Automation Products logo" },
+  { name: "L&T", logo: "/Partners/lnt.png", alt: "Larson and Turbo logo" },
+  { name: "Hikrobot", logo: "/Partners/hikrobot.png", alt: "Hikrobot logo" },
+  { name: "NRB", logo: "/Partners/nrb.png", alt: "NRB logo" }
+];
+
+const benefits = [
   {
-    name: "VAP",
-    logo: "/Partners/vap.png", 
-    alt: "Vinayak Automation Products logo"
+    title: "Innovation",
+    desc: "Work with an agile team focused on next-gen machine vision & automation."
   },
   {
-    name: "L&T",
-    logo: "/Partners/lnt.png",
-    alt: "Larson and Turbo logo"
+    title: "Full Support",
+    desc: "From first meeting to after-sales, we provide end-to-end technical and business support."
   },
   {
-    name: "Hikrobot",
-    logo: "/Partners/hikrobot.png",
-    alt: "Hikrobot logo"
+    title: "Competitive Edge",
+    desc: "Leverage our expertise to future-proof your operations and outperform the market."
   },
   {
-    name: "NRB",
-    logo: "/Partners/nrb.png",
-    alt: "NRB logo"
+    title: "Reliability",
+    desc: "We believe in trust, transparency, and long-term growth for every partnership."
   }
 ];
 
 export default function IndustryPartners() {
   return (
-    <section className="py-16 bg-[#f8f9fa]">
-      <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-4 text-gray-800 font-mono">Industry Partners</h2>
-        <p className="mb-8 text-lg text-gray-600 max-w-2xl">
-          At Aseiro, we're proud to collaborate with some of the world's most respected manufacturers and brands. Our industry partners trust us to deliver innovative automation and machine vision solutions that drive quality, efficiency, and competitive advantage in their operations.
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 className="text-4xl font-extrabold text-gray-900 mb-4 font-sans">
+          Industry Collaborators
+        </h2>
+        <p className="mb-10 text-lg text-gray-600 max-w-2xl font-sans">
+          We are trusted by industry leaders in automation, engineering, and manufacturing. Our partners rely on Aseiro for innovative machine vision solutions, robust integration, and a relationship built on real results.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-8 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center mb-12">
           {partners.map((partner) => (
             <div
               key={partner.name}
-              className="bg-white rounded-2xl shadow-md p-6 flex items-center justify-center w-56 h-32 hover:shadow-lg transition"
+              className="bg-gray-50 rounded-xl shadow-sm p-6 flex items-center justify-center transition-transform hover:-translate-y-1 hover:shadow-md"
             >
               <Image
                 src={partner.logo}
                 alt={partner.alt}
-                width={160}
-                height={70}
+                width={140}
+                height={60}
                 className="object-contain"
               />
             </div>
           ))}
         </div>
 
-        <div className="bg-yellow-100 border-l-4 border-yellow-400 p-6 rounded-xl shadow-md">
-          <h3 className="text-xl font-semibold text-yellow-700 mb-2 font-mono">
-            Why Partner With Us?
+        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-xl shadow-sm max-w-3xl mb-10">
+          <h3 className="text-2xl font-bold text-yellow-700 mb-2 font-sans">
+            Why Partner With Aseiro?
           </h3>
-          <p className="text-gray-700 text-base">
-            By partnering with Aseiro, you join a network of forward-thinking companies that value innovation, reliability, and long-term growth. We bring deep expertise in automation, flexible integration, and end-to-end support—helping our partners stay ahead in a rapidly changing industrial landscape. Ready to future-proof your operations? Let’s build success together.
+          <ul className="grid grid-cols-1 sm:grid-cols-4 gap-x-8 gap-y-3 text-gray-700 font-sans list-none pl-0">
+            {benefits.map((b) => (
+              <li key={b.title} className="mb-2">
+                <span className="font-semibold text-yellow-900">{b.title}:</span> {b.desc}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <p className="text-base text-gray-600 font-sans mb-2 md:mb-0">
+            Ready to explore a partnership? We’re always open to collaborating with forward-thinking brands, manufacturers, and solution providers.
           </p>
+          <Link
+            href="/contact"
+            className="inline-block px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-lg shadow transition focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2"
+          >
+            Become a Partner
+          </Link>
         </div>
       </div>
     </section>
