@@ -80,7 +80,7 @@ export default function SolutionsGrid() {
                       ))}
                     </div>
                     <a
-                      href={`#${solution.id}`}
+                      href={`/solutions#${solution.id}`}
                       className="inline-flex items-center bg-black/50 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-500 group-hover:bg-[#b59b1d] group-hover:text-[#004080] group-hover:scale-110 group-hover:shadow-lg mt-2"
                     >
                       <Target className="mr-2 h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
