@@ -7,7 +7,7 @@ import ContactCTA from "@/components/ContactPage/ContactCTA";
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="font-sans bg-white">
       <Header />
       <main>
         <ContactHero />
