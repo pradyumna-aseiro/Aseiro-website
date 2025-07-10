@@ -10,9 +10,9 @@ export default function CTASection() {
         <Image src="/precision-manufacturing.png" alt="Background" fill className="object-cover" />
       </div>
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-sm uppercase tracking-wider text-[#b59b1d] mb-4">GET STARTED</p>
+        <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">GET STARTED</p>
         <h2 className="text-4xl lg:text-5xl font-light text-white mb-8 leading-tight">
-          Ready to Transform
+          Ready to <span className="text-[#b59b1d]">Transform</span>
           <br />
           Your Manufacturing?
         </h2>

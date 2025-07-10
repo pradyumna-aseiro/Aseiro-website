@@ -22,9 +22,9 @@ export default function IndustryCards() {
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-sm uppercase tracking-wider text-[#b59b1d] mb-4">INDUSTRIES WE SERVE</p>
+            <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">INDUSTRIES WE SERVE</p>
             <h2 className="text-4xl lg:text-5xl font-light text-white mb-8 leading-tight">
-              Tailored Solutions
+              Tailored <span className="text-[#b59b1d]">Solutions</span>
               <br />
               for Every Sector
             </h2>

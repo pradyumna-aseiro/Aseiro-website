@@ -44,16 +44,6 @@ export default function Footer() {
               <li><Link href="/about" className="text-gray-600 hover:text-[#004080]">About Us</Link></li>
               <li><Link href="/contact" className="text-gray-600 hover:text-[#004080]">Get in Touch</Link></li>
               <li><Link href="/case-studies" className="text-gray-600 hover:text-[#004080]">Case Studies</Link></li>
-              <li>
-                <div className="flex items-center space-x-4">
-                  <a
-                    href="mailto:pradyumna@aseiro.in"
-                    className="text-[#004080] underline hover:text-gray-400 transition-colors"
-                  >
-                    pradyumna@aseiro.in
-                  </a>
-                </div>
-              </li>
             </ul>
           </div>
         </div>

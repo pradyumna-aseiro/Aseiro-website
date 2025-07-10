@@ -50,7 +50,7 @@ export default function BenefitsCards() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-sm uppercase tracking-wider text-[#b59b1d] mb-4">AUTOMATION 4.0 BENEFITS</p>
+          <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">AUTOMATION 4.0 BENEFITS</p>
           <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
             <span className="text-[#b59b1d]">Benefits</span> of Automation 4.0
           </h2>

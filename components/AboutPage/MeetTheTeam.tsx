@@ -9,7 +9,7 @@ const team = [
     title: "Co-Founder & Managing Director",
     specialty: "Industrial Automation Leadership",
     summary:
-      "Built VAP into a top automation brand. Trusted for reliable solutions and deep OEM connections.",
+      "With 17+ years in automation, Abhijeet built VAP into a leading brand trusted by OEMs and factories across South India. At Aseiro, he leverages his industry network and expertise to deliver practical, modern automation and vision systems.",
     img: "/Team/team-abhijeet.png",
     linkedin: "https://www.linkedin.com/in/abhijeet-madnurkar-27a15142/",
     email: "info@aseiro.in",
@@ -19,7 +19,7 @@ const team = [
     title: "Co-Founder & Robotics Engineer",
     specialty: "Robotics & Intelligent Systems",
     summary:
-      "Ex-Rivelin Robotics, M.S. Sheffield. Drives vision, robotics, and AI for global manufacturing clients.",
+      "Pradyumna holds a Master’s in Robotics and has built advanced robotic systems for global aerospace and defense clients. Backed by a UK Global Talent Visa, he leads Aseiro’s development of intelligent automation and vision solutions for modern manufacturing.",
     img: "/Team/team-pradyumna.png",
     linkedin: "https://www.linkedin.com/in/pradyumnam/",
     email: "pradyumna@aseiro.in",
@@ -29,7 +29,7 @@ const team = [
     title: "Business Development",
     specialty: "Tech Project Leadership",
     summary:
-      "Ex-Piramal, TATA. Deep expertise in systems, SPM, plant automation, and international project delivery.",
+      "With 16+ years leading projects at Piramal, TATA, and Mojay Group, Subbarao specializes in automation, machine vision, and embedded systems. He drives business development at Aseiro, leveraging deep technical and leadership experience across IT and manufacturing.",
     img: "/Team/team-subbarao.png",
     linkedin: "https://www.linkedin.com/in/subbarao-business-development-171119301/",
     email: "subbarao@aseiro.in",
@@ -39,7 +39,7 @@ const team = [
     title: "Automation Engineer",
     specialty: "Embedded Systems & Automation",
     summary:
-      "Expert in PLC, HMI, vision robotics for material handling and automation in manufacturing plants.",
+      "Sriranga specializes in industrial automation and embedded systems, with experience in the semiconductor industry. At Aseiro, he engineers smart vision robotics and automation solutions for modern manufacturing.",
     img: "/Team/team-sriranga.png",
     linkedin: "https://www.linkedin.com/in/sriranga-puppala-656428200",
     email: "design.sriranga@aseiro.in",
@@ -49,7 +49,7 @@ const team = [
     title: "Instrumentation Engineer",
     specialty: "Machine Vision & IoT",
     summary:
-      "Leads next-gen machine vision and robotics, with IoT, 3D modeling, and multiple tech innovations.",
+      "Parth combines expertise in PLC programming, machine vision, and robotics with hands-on innovation in IoT, energy harvesting, and voice-controlled systems. At Aseiro, he leads next-gen automation and tech-driven solutions across industries.",
     img: "/Team/team-parth.png",
     linkedin: "https://www.linkedin.com/in/parth-madnurkar-3b1123279/",
     email: "design.parth@aseiro.in",
@@ -59,7 +59,7 @@ const team = [
     title: "Marketing Expert",
     specialty: "Global Marketing Strategy",
     summary:
-      "Ex-agency founder. Leads brand, content, and international campaigns for Aseiro’s growth.",
+      "Shriya is an international marketing expert with 5+ years’ experience, building creative strategies and leading campaigns across Europe, the UK, Asia, and beyond. At Aseiro, she drives global brand and marketing strategy, making the company a trusted name in machine vision solutions.",
     img: "/Team/team-shriya.png",
     linkedin: "https://www.linkedin.com/in/shriyaraiagarwal",
     email: "hello@aseiro.in",
