@@ -40,7 +40,7 @@ export default function IndustryPartners() {
         <div className="text-center mb-16">
           <p className="text-sm uppercase tracking-wider text-gray-500 mb-3">COLLABORATORS</p>
           <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
-            Industry Partners <span className="text-[#b59b1d]">& Collaborators</span>
+            Industry Partners & <span className="text-[#b59b1d]">Collaborators</span>
           </h2>
           <p className="max-w-2xl mx-auto text-center text-lg text-gray-700 font-light mb-3">
             We are proud to work with leaders in automation, engineering, and manufacturing. 
@@ -64,6 +64,18 @@ export default function IndustryPartners() {
               />
             </div>
           ))}
+        </div>
+
+        <div className="text-center mb-16">
+          <p className="text-sm uppercase tracking-wider text-gray-500 mb-3">BENEFITS</p>
+          <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
+            Why <span className="text-[#b59b1d]">Partner</span> With Us?
+          </h2>
+          <p className="max-w-2xl mx-auto text-center text-lg text-gray-700 font-light mb-3">
+            At Aseiro, we go beyond products—we forge long-term collaborations with our partners, 
+            enabling them to lead in efficiency, quality, and digital transformation. Here's what you 
+            gain when you choose to partner with us:
+          </p>
         </div>
 
         {/* Benefits Grid */}
@@ -90,7 +102,7 @@ export default function IndustryPartners() {
             Partner with Aseiro and unlock innovation, support, and growth for your business.
           </p>
           <Link
-            href="/partner"
+            href="/contact"
             className="inline-block px-7 py-3 bg-[#b59b1d] hover:bg-[#cfb856] text-white text-lg font-semibold rounded-xl shadow transition focus:outline-none focus:ring-2 focus:ring-[#b59b1d]/60 focus:ring-offset-2"
           >
             Become a Partner
