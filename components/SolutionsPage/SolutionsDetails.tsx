@@ -1,4 +1,4 @@
-import { Eye, Cog, CheckCircle } from "lucide-react";
+import { Eye, Cog, Zap, CheckCircle } from "lucide-react";
 import Image from "next/image";
 
 export default function SolutionsDetails() {
