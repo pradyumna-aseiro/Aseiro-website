@@ -1,3 +1,5 @@
+import Header from "@/components/MainPage/Header";
+import Footer from "@/components/MainPage/Footer";
 import HeroSection from "@/components/AboutPage/HeroSection";
 import OurStorySection from "@/components/AboutPage/OurStorySection";
 import WhatSetsUsApart from "@/components/AboutPage/WhatSetsUsApart";
