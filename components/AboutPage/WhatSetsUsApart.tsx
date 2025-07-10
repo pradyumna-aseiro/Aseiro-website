@@ -28,7 +28,7 @@ export default function WhatSetsUsApart() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">WHAT SETS US APART</p>
+          <p className="text-sm uppercase tracking-wider text-[#b59b1d] mb-4">WHAT SETS US APART</p>
           <h2 className="text-3xl lg:text-4xl font-light text-gray-900 mb-6">
             Why Choose <span className="text-[#b59b1d]">ASEIRO</span>?
           </h2>

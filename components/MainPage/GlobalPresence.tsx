@@ -7,7 +7,7 @@ export default function GlobalPresence() {
         <div className="text-center mb-16">
           <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">GLOBAL PRESENCE</p>
           <h2 className="text-3xl lg:text-4xl font-light text-gray-900 mb-6">
-            Two Continents,
+            Two <span className="text-[#b59b1d]">Continents</span>,
             <br />
             One Vision
           </h2>
