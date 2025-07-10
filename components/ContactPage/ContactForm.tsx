@@ -9,13 +9,13 @@ const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSer
 
 // Replace these with your form's real entry IDs:
 const ENTRY_IDS = {
-  firstName: "entry.420838071",
-  lastName: "entry.1088519382",
-  email: "entry.2102514087",
-  company: "entry.55230752",
-  phone: "entry.1840582477",
-  industry: "entry.2111812928",
-  details: "entry.436970204"
+  firstName: "entry.4332938",
+  lastName: "entry.1087375414",
+  email: "entry.2100760861",
+  company: "entry.540977719",
+  phone: "entry.1949970865",
+  industry: "entry.643388852",
+  details: "entry.294429407"
 };
 
 export default function ContactForm() {
