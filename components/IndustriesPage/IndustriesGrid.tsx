@@ -92,7 +92,7 @@ export default function IndustriesGrid() {
                     </div>
                   </div>
                   <div className="transform transition-all duration-500 group-hover:translate-y-0 translate-y-2">
-                    <h3 className="text-2xl font-light text-white mb-2 group-hover:text-[#00A0B0]">
+                    <h3 className="text-2xl font-light text-white mb-2 group-hover:text-[#FFD700]">
                       {industry.title}
                     </h3>
                     <p className="text-gray-200 text-sm mb-3 opacity-90 group-hover:opacity-100 transition-opacity duration-500">
@@ -108,7 +108,7 @@ export default function IndustriesGrid() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#00A0B0]/50"></div>
+                <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#b59b1d]/80"></div>
               </div>
             </div>
           ))}
