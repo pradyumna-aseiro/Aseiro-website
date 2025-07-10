@@ -56,7 +56,7 @@ export default function SolutionsDetails() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
               <Image
-                src="/solutions-warehouse.png"
+                src="/solutions-robots.png"
                 alt="Robotics Integration"
                 width={600}
                 height={400}

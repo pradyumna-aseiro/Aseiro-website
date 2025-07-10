@@ -6,8 +6,8 @@ import Image from "next/image";
 const industries = [
   {
     title: "Pharmaceutical",
-    description: "FDA-compliant automation for drug manufacturing and packaging.",
-    image: "/precision-manufacturing.png",
+    description: "FDA-compliant automation for drug manufacturing, inspection and packaging.",
+    image: "/industries-pharma.png",
     icon: <Pill className="h-6 w-6" />,
     applications: [
       "Tablet Inspection", "Vial Filling", "Serialization", "Clean Room Automation"
@@ -17,7 +17,7 @@ const industries = [
   {
     title: "Automotive",
     description: "Precision automation for vehicle assembly and component manufacturing.",
-    image: "/automation-facility.png",
+    image: "/industries-automotive.png",
     icon: <Car className="h-6 w-6" />,
     applications: [
       "Welding Automation", "Paint Line", "Quality Inspection", "Assembly Line"
@@ -27,7 +27,7 @@ const industries = [
   {
     title: "Food & Beverage",
     description: "Hygienic automation solutions for food processing and packaging.",
-    image: "/precision-manufacturing.png",
+    image: "/industries-food.png",
     icon: <Coffee className="h-6 w-6" />,
     applications: [
       "Packaging Lines", "Quality Sorting", "Fill Level Check", "Label Verification"
@@ -37,7 +37,7 @@ const industries = [
   {
     title: "Electronics",
     description: "High-precision automation for electronic component manufacturing.",
-    image: "/automation-facility.png",
+    image: "/industries-electronics.png",
     icon: <Cpu className="h-6 w-6" />,
     applications: [
       "PCB Inspection", "Component Placement", "Soldering", "Testing"
@@ -47,7 +47,7 @@ const industries = [
   {
     title: "Warehousing & Logistics",
     description: "Smart automation for warehousing, fulfillment, and logistics operations.",
-    image: "/solutions-warehouse.png",
+    image: "/industries-warehouse.png",
     icon: <Building2 className="h-6 w-6" />,
     applications: [
       "Conveyor Automation", "Sorting Systems", "Palletizing", "Barcode Tracking"
@@ -57,7 +57,7 @@ const industries = [
   {
     title: "Agro & FMCG",
     description: "Agro-processing and FMCG automation for efficient and scalable output.",
-    image: "/automation-facility.png",
+    image: "/industries-agro.png",
     icon: <Wheat className="h-6 w-6" />,
     applications: [
       "Sorting & Grading", "Packaging", "Traceability", "Quality Analysis"
