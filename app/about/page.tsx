@@ -5,7 +5,6 @@ import OurStorySection from "@/components/AboutPage/OurStorySection";
 import WhatSetsUsApart from "@/components/AboutPage/WhatSetsUsApart";
 import GlobalPresence from "@/components/MainPage/GlobalPresence";
 import MeetTheTeam from "@/components/AboutPage/MeetTheTeam";
-import TeamStats from "@/components/AboutPage/TeamStats";
 
 // import Header, Footer, TopBar as you normally do
 
@@ -17,9 +16,8 @@ export default function AboutPage() {
         <HeroSection />
         <OurStorySection />
         <WhatSetsUsApart />
-        <GlobalPresence />
         <MeetTheTeam />
-        <TeamStats />
+        <GlobalPresence />
       </main>
       <Footer />
     </div>
