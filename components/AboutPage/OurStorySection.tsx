@@ -8,22 +8,25 @@ export default function OurStorySection() {
           <div>
             <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">OUR STORY</p>
             <h2 className="text-3xl lg:text-4xl font-light text-gray-900 mb-8 leading-tight">
-              From Vision to
+              From <span className="text-[#FFD700]">Vision</span> to
               <br />
-              Global Reality
+              Reality
             </h2>
             <div className="space-y-6 text-gray-600 leading-relaxed">
               <p>
-                Aseiro Industries was born from a simple yet powerful belief: that manufacturing excellence should be
-                accessible to companies of all sizes, regardless of their location or resources.
+              Aseiro Industries Pvt Ltd was founded to help manufacturers adopt Industry 4.0 standards by integrating robotics, 
+              machine vision, and advanced automation into production lines. Our mission is to eliminate human error, boost productivity, 
+              and deliver consistent quality across industrial processes.
               </p>
               <p>
-                Starting with a small team of passionate engineers in Hyderabad, we quickly recognized the gap between
-                cutting-edge automation technology and practical, cost-effective implementation for manufacturers.
+              We bring together the technical innovation of a modern startup and the trusted legacy of Vinayak Automation Products - a 
+              respected name in industrial automation and instrumentation since 2007. With over 17 years of experience and 10,000 clients, 
+              Vinayak Automation has sold various products including sensors, drives, encoders, PLCs, HMIs, and VFDs to clients across sectors.
               </p>
               <p>
-                Today, with offices spanning from Sheffield, UK to Hyderabad, India, we serve clients across multiple
-                continents, delivering solutions that combine international expertise with local understanding.
+              Aseiro was launched to cater to custom requirements in quality inspection, industrial robotics, and smart automation, blending 
+              new-generation vision systems with time-tested control architectures. We believe in transforming conventional manufacturing into 
+              intelligent, self-optimizing factories.
               </p>
             </div>
           </div>

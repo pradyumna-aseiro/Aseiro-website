@@ -9,11 +9,11 @@ export default function HeroSection() {
           <h1 className="text-4xl lg:text-6xl font-light text-gray-900 mb-8 leading-tight">
             Pioneering the Future
             <br />
-            of <span className="text-[#004080]">Manufacturing</span>
+            of <span className="text-[#FFD700]">Manufacturing</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Founded with a vision to revolutionize manufacturing through intelligent automation, Aseiro Industries has
-            grown from a startup to a global leader in machine vision and robotics solutions.
+            Founded with a vision to revolutionize manufacturing through intelligent automation, Aseiro Industries is 
+            a pioneer in machine vision and robotics solutions.
           </p>
         </div>
       </div>

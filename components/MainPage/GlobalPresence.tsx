@@ -16,13 +16,13 @@ export default function GlobalPresence() {
           <Card className="bg-gray-50 border-0 p-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-[#004080] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">🇬🇧</span>
+                <span className="text-[#FFD700]">GB</span>
               </div>
               <h3 className="text-2xl font-light text-gray-900 mb-4">Sheffield, United Kingdom</h3>
               <div className="space-y-3 text-gray-600">
-                <p className="font-medium">European Headquarters</p>
-                <p>Advanced Manufacturing Park</p>
-                <p>Sheffield S60 5WG</p>
+                <p className="font-medium">Aseiro Industries Ltd</p>
+                <p>14-18 Halford House</p>
+                <p>Sheffield S1 2AZ</p>
                 <p>United Kingdom</p>
               </div>
               <div className="mt-6 pt-6 border-t border-gray-200">
@@ -35,14 +35,14 @@ export default function GlobalPresence() {
           <Card className="bg-gray-50 border-0 p-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-[#004080] rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">🇮🇳</span>
+                <span className="text-[#FFD700]">IN</span>
               </div>
               <h3 className="text-2xl font-light text-gray-900 mb-4">Hyderabad, India</h3>
               <div className="space-y-3 text-gray-600">
-                <p className="font-medium">Asian Operations Center</p>
-                <p>HITEC City</p>
-                <p>Hyderabad 500081</p>
-                <p>Telangana, India</p>
+                <p className="font-medium">Aseiro Industries Pvt Ltd</p>
+                <p>Meghana Eastend Apartment, 10-2-2/10,</p>
+                <p>Nehru Nagar Colony, West Marredpally, Secunderabad,</p>
+                <p>Hyderabad, Telangana, India, 500026</p>
               </div>
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <p className="text-sm text-gray-500">

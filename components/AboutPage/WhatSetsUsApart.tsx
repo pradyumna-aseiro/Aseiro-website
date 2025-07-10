@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Star, HeartHandshake, Award } from "lucide-react";
+import { Star, HeartHandshake, Puzzle, Shapes } from "lucide-react";
 
 export default function WhatSetsUsApart() {
   const items = [
@@ -10,13 +10,18 @@ export default function WhatSetsUsApart() {
     },
     {
       icon: <HeartHandshake className="h-8 w-8" />,
-      title: "Long-term Partnerships",
-      description: "We invest in understanding your business for solutions that scale as you grow.",
+      title: "End-to-End Support",
+      description: "From planning and integration to training and maintenance—we stay with you every step of the way.",
     },
     {
-      icon: <Award className="h-8 w-8" />,
-      title: "Global Recognition",
-      description: "Award-winning projects and references from top manufacturers in multiple countries.",
+      icon: <Puzzle className="h-8 w-8" />,
+      title: "Innovative Integration",
+      description: "We blend machine vision, robotics, and real-time controls for faster inspection and lower costs—up to 70% inspection time reduction.",
+    },
+    {
+      icon: <Shapes className="h-8 w-8" />,
+      title: "Custom-Tailored Systems",
+      description: "We create modular solutions that fit perfectly into your factory setup—whether it's a small upgrade or a full transformation.",
     },
   ];
   return (
@@ -25,10 +30,10 @@ export default function WhatSetsUsApart() {
         <div className="text-center mb-16">
           <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">WHAT SETS US APART</p>
           <h2 className="text-3xl lg:text-4xl font-light text-gray-900 mb-6">
-            Why Choose Aseiro?
+            Why Choose <span className="text-[#FFD700]">ASEIRO</span>?
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10">
-            Our approach combines deep industry expertise, a passion for innovation, and a relentless focus on delivering measurable value for every client.
+            Our approach combines deep industry expertise, a passion for innovation, and a relentless focus on delivering automation solutions for every client.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
