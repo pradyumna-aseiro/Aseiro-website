@@ -81,23 +81,22 @@ export default function SolutionsGrid() {
                         </div>
                       ))}
                     </div>
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      asChild
-                      className="border-white text-white hover:bg-[#b59b1d] hover:text-[#004080] bg-black/50 backdrop-blur-sm rounded-full mt-2 transition-all group-hover:bg-[#b59b1d] group-hover:text-[#004080] group-hover:scale-110 group-hover:shadow-lg"
-                    >
-                      <Link href={`/solutions#${solution.id}`}>
-                        <Target className="mr-2 h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
-                        Learn More
-                      </Link>
-                    </Button>
                   </div>
                 </div>
                 <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#b59b1d]/50"></div>
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button
+            size="lg"
+            variant="outline"
+            asChild
+            className="border-white text-white hover:bg-white hover:text-gray-900 bg-transparent"
+          >
+            <Link href="/solutions">Learn More</Link>
+          </Button>
         </div>
       </div>
     </section>
