@@ -4,30 +4,30 @@ import Image from "next/image";
 const machineVision = [
   {
     title: "Printing Defect Inspection & Rejection",
-    description: "Real-time detection and rejection of misprinted pharmaceutical strips using advanced machine vision.",
-    image: "/case-printing-defect.jpg",
-    url: "https://vercel-website-h80ldx02u-pradyumna-madnurkars-projects.vercel.app/resources/printing-inspection-rejection",
+    description: "Real-time detection and rejection of misprinted labelled strips on manufacturing lines using advanced machine vision.",
+    image: "/case-printing-inspection.png",
+    url: "/case-studies/printing-inspection",
     tag: "Machine Vision",
   },
   {
     title: "Tablet Presence/Absence Inspection",
     description: "Ensure 100% tablet presence in every blister with high-speed automated inspection and rejection.",
-    image: "/case-tablet-presence.jpg",
-    url: "https://vercel-website-h80ldx02u-pradyumna-madnurkars-projects.vercel.app/resources/presence-absence-of-tablets-inspection",
+    image: "/case-tablet-inspection.jpg",
+    url: "/case-studies/tablet-inspection",
     tag: "Machine Vision",
   },
   {
     title: "Bottle Level Inspection",
     description: "Non-contact vision-based inspection to guarantee correct liquid level in every bottle, ensuring regulatory compliance.",
     image: "/case-bottle-level.jpg",
-    url: "https://vercel-website-h80ldx02u-pradyumna-madnurkars-projects.vercel.app/resources/bottle-level-inspection",
+    url: "/case-studies/bottle-level-inspection",
     tag: "Machine Vision",
   },
   {
     title: "Needle Roller Bearing Inspection",
     description: "Automated system for surface and dimension inspection of needle roller bearings. Robust, high-speed, minimal human intervention.",
     image: "/case-needle-roller.jpg",
-    url: "https://youtu.be/HEMnWzmgZ_c",
+    url: "/case-studies/bearing-inspection",
     tag: "Machine Vision",
   },
   {
