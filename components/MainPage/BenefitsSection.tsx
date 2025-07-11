@@ -55,21 +55,21 @@ export default function BenefitsCards() {
             <span className="text-[#b59b1d]">Benefits</span> of Automation 4.0
           </h2>
           <p className="max-w-2xl mx-auto text-center text-lg text-gray-700 mb-8 font-light">
-            <span className="font-semibold text-[#b59b1d]">Automation 4.0</span> combines advanced automation, machine vision, IoT, robotics, and AI for intelligent, connected, and self-optimizing manufacturing—unlocking efficiency, quality, and business growth.
+            <span className="font-semibold text-[#b59b1d]">Automation 4.0</span> combines advanced automation, machine vision, IoT, robotics, and AI for intelligent, connected, and self-optimizing manufacturing, unlocking efficiency, quality, and business growth.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
           {benefits.map((benefit, index) => (
             <div key={index} id={benefit.id} className="group">
-              <div className="relative h-80 rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:-translate-y-2">
+              <div className="relative h-80 rounded-2xl overflow-hidden will-change-transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:-translate-y-2">
                 <Image
                   src={benefit.image || "/placeholder.svg"}
                   alt={benefit.title}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-all duration-500 group-hover:from-black/95 group-hover:via-black/50"></div>
-                <div className="absolute inset-0 bg-[#004080]/0 transition-all duration-500 group-hover:bg-[#004080]/20"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-2xl transition-all duration-500 group-hover:from-black/95 group-hover:via-black/50"></div>
+                <div className="absolute inset-0 bg-[#004080]/0 rounded-2xl transition-all duration-500 group-hover:bg-[#004080]/20"></div>
                 <div className="absolute inset-0 flex flex-col justify-between p-6">
                   <div className="flex justify-between items-start">
                     <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all duration-500 group-hover:bg-[#b59b1d] group-hover:scale-110">

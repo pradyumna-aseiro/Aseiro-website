@@ -18,7 +18,7 @@ const benefits = [
   {
     icon: <Award className="h-7 w-7 text-[#004080]" />,
     title: "Credibility",
-    desc: "Work with a trusted name relied on by top manufacturers across sectors—our results speak for themselves."
+    desc: "Work with a trusted name relied on by top manufacturers across sectors, our results speak for themselves."
   },
   {
     icon: <ShieldCheck className="h-7 w-7 text-[#004080]" />,
@@ -28,7 +28,7 @@ const benefits = [
   {
     icon: <Handshake className="h-7 w-7 text-[#004080]" />,
     title: "Mutual Growth",
-    desc: "Scale your business and expand opportunities—our success is measured by your competitive edge."
+    desc: "Scale your business and expand opportunities, our success is measured by your competitive edge."
   },
 ];
 
@@ -72,7 +72,7 @@ export default function IndustryPartners() {
             Why <span className="text-[#b59b1d]">Partner</span> With Us?
           </h2>
           <p className="max-w-2xl mx-auto text-center text-lg text-gray-700 font-light mb-3">
-            At Aseiro, we go beyond products—we forge long-term collaborations with our partners, 
+            At Aseiro, we go beyond products, we forge long-term collaborations with our partners, 
             enabling them to lead in efficiency, quality, and digital transformation. Here's what you 
             gain when you choose to partner with us:
           </p>

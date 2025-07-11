@@ -27,7 +27,7 @@ export default function IndustriesHero() {
     </h1>
     <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
         From pharmaceutical precision to logistics speed, we deliver automation solutions
-        tailored for each sector—compliance, reliability, and maximum ROI.
+        tailored for each sector, compliance, reliability, and maximum ROI.
     </p>
     </div>
     </section>

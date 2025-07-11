@@ -11,17 +11,17 @@ export default function WhatSetsUsApart() {
     {
       icon: <HeartHandshake className="h-8 w-8" />,
       title: "End-to-End Support",
-      description: "From planning and integration to training and maintenance—we stay with you every step of the way.",
+      description: "From planning and integration to training and maintenance, we stay with you every step of the way.",
     },
     {
       icon: <Puzzle className="h-8 w-8" />,
       title: "Innovative Integration",
-      description: "We blend machine vision, robotics, and real-time controls for faster inspection and lower costs—up to 70% inspection time reduction.",
+      description: "We blend machine vision, robotics, and real-time controls for faster inspection and lower costs, up to 70% inspection time reduction.",
     },
     {
       icon: <Shapes className="h-8 w-8" />,
       title: "Custom-Tailored Systems",
-      description: "We create modular solutions that fit perfectly into your factory setup—whether it's a small upgrade or a full transformation.",
+      description: "We create modular solutions that fit perfectly into your factory setup, whether it's a small upgrade or a full transformation.",
     },
   ];
   return (
