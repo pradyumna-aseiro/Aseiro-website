@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 
-// Example data for your case studies
 const caseStudies = [
   {
     title: "Printing Defect Inspection & Rejection",
@@ -35,7 +34,7 @@ const caseStudies = [
   {
     title: "Needle Roller Bearing Inspection",
     description: "Automated system for diameter and defect checking of needle roller bearings using industrial cameras.",
-    image: "/case-needle-inspection.png",
+    image: "/case-needle-roller.png",
     tags: ["Machine Vision"],
     applications: [
       "Diameter Measurement", "Surface Defect Detection", "Automated Sorting"
@@ -44,13 +43,12 @@ const caseStudies = [
   {
     title: "Injection Moulded Caps Inspection & Rejection",
     description: "Vision system to detect, inspect, and reject defective injection moulded caps at high speed.",
-    image: "/case-caps-inspection.png",
+    image: "/case-caps.png",
     tags: ["Machine Vision"],
     applications: [
       "Cap Defect Detection", "Orientation Check", "Color/Print Verification"
     ]
   },
-  // Add PLC/Automation cases as needed below
   {
     title: "Stirrup Rebar Bending Machine Automation",
     description: "Automated bending and pulling of rebars into custom shapes with PLC-based precision control.",
@@ -82,7 +80,7 @@ const caseStudies = [
 
 export default function CaseStudiesGrid() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-10">
           <span className="text-[#b59b1d]">Case Studies</span> by Aseiro
