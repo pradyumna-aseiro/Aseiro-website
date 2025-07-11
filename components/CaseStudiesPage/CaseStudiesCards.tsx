@@ -12,28 +12,28 @@ const machineVision = [
   {
     title: "Tablet Presence/Absence Inspection",
     description: "Ensure 100% tablet presence in every blister with high-speed automated inspection and rejection.",
-    image: "/case-tablet-inspection.jpg",
+    image: "/case-tablet-inspection.png",
     url: "/case-studies/tablet-inspection",
     tag: "Machine Vision",
   },
   {
     title: "Bottle Level Inspection",
     description: "Non-contact vision-based inspection to guarantee correct liquid level in every bottle, ensuring regulatory compliance.",
-    image: "/case-bottle-level.jpg",
+    image: "/case-bottle-level.png",
     url: "/case-studies/bottle-level-inspection",
     tag: "Machine Vision",
   },
   {
     title: "Needle Roller Bearing Inspection",
     description: "Automated system for surface and dimension inspection of needle roller bearings. Robust, high-speed, minimal human intervention.",
-    image: "/case-needle-roller.jpg",
+    image: "/case-needle-roller.png",
     url: "/case-studies/bearing-inspection",
     tag: "Machine Vision",
   },
   {
     title: "Cap Inspection & Rejection",
     description: "Injection-moulded cap inspection and rejection using industrial vision and robotics for zero-defect packaging.",
-    image: "/case-caps.jpg",
+    image: "/case-caps.png",
     url: "/case-studies/caps-inspection", 
     tag: "Machine Vision",
   },
@@ -43,21 +43,21 @@ const plcAutomation = [
   {
     title: "Stirrup Rebar Bending Machine",
     description: "Automated system for custom bending of construction rebars into various shapes with precision and repeatability.",
-    image: "/case-stirrup-rebar.jpg",
+    image: "/case-stirrup-rebar.png",
     url: "/case-studies/rebar-bending",
     tag: "PLC Automation",
   },
   {
     title: "Wire Crimping Machine",
     description: "Custom PLC-driven wire crimping and cutting machine for high-volume sieve manufacturing.",
-    image: "/case-wire-crimping.jpg",
+    image: "/case-wire-crimping.png",
     url: "/case-studies/wire-crimping",
     tag: "PLC Automation",
   },
   {
     title: "Material Handling Automation",
     description: "Fully automatic handling and bundling system for stirrup bending machine, minimizing manual intervention.",
-    image: "/case-material-handling.jpg",
+    image: "/case-material-handling.png",
     url: "/case-studies/material-handling",
     tag: "PLC Automation",
   },
@@ -66,26 +66,6 @@ const plcAutomation = [
 export default function CaseStudiesPage() {
   return (
     <main>
-      {/* Hero Section */}
-      <section className="relative w-full h-[45vh] min-h-[320px] flex items-center justify-center bg-gray-900">
-        <video
-          className="absolute w-full h-full object-cover opacity-60"
-          src="/aseiro-hero.mp4" // replace with your main hero video or image
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
-        <div className="relative z-10 text-center">
-          <h1 className="text-white text-4xl md:text-5xl font-bold mb-3 drop-shadow-lg">
-            Aseiro Case Studies
-          </h1>
-          <p className="text-lg md:text-2xl text-white font-light drop-shadow mb-6">
-            See how Aseiro’s technology solves real problems in quality, automation, and compliance.
-          </p>
-        </div>
-      </section>
-
       {/* Grid */}
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4">
