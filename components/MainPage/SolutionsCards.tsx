@@ -1,6 +1,6 @@
 // components/SolutionsCards.tsx
 
-import { Eye, Cog, Shield, Zap, ArrowRight, CheckCircle, Target } from "lucide-react";
+import { Eye, Cog, Zap, ArrowRight, CheckCircle, Target } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -54,10 +54,13 @@ export default function SolutionsGrid() {
                   alt={solution.title}
                   fill
                   className="object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
+                  style={{ borderRadius: "1rem" }} // extra fallback
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-2xl transition-all duration-500 group-hover:from-black/95 group-hover:via-black/50"></div>
-                <div className="absolute inset-0 bg-[#004080]/0 rounded-2xl transition-all duration-500 group-hover:bg-[#004080]/20"></div>
-                <div className="absolute inset-0 flex flex-col justify-between p-6">
+                {/* Main overlays */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-2xl transition-all duration-500 group-hover:from-black/95 group-hover:via-black/50 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-[#004080]/0 rounded-2xl transition-all duration-500 group-hover:bg-[#004080]/20 pointer-events-none"></div>
+                {/* Content */}
+                <div className="absolute inset-0 flex flex-col justify-between p-6 z-10">
                   <div className="flex justify-between items-start">
                     <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all duration-500 group-hover:bg-[#b59b1d] group-hover:scale-110">
                       <div className="text-white transition-colors duration-500 group-hover:text-[#004080]">
@@ -83,19 +86,24 @@ export default function SolutionsGrid() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#b59b1d]/50"></div>
+                {/* Border outline */}
+                <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#b59b1d]/50 pointer-events-none"></div>
               </div>
             </div>
           ))}
         </div>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        {/* Centered Learn More button */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
           <Button
             size="lg"
             variant="outline"
             asChild
-            className="border-white text-white hover:bg-white hover:text-gray-900 bg-transparent"
+            className="border-white text-white hover:bg-[#b59b1d] hover:text-[#004080] bg-black/80 rounded-full px-8 py-3 transition-all duration-300"
           >
-            <Link href="/solutions">Learn More</Link>
+            <Link href="/solutions">
+              <Target className="mr-2 h-5 w-5" />
+              Learn More
+            </Link>
           </Button>
         </div>
       </div>

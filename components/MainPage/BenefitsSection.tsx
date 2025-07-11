@@ -1,6 +1,6 @@
 // components/BenefitsCards.tsx
 
-import { CheckCircle, ArrowRight, Target, LineChart, BadgePercent, Eye } from "lucide-react";
+import { CheckCircle, ArrowRight, LineChart, BadgePercent, Eye } from "lucide-react";
 import Image from "next/image";
 
 const benefits = [
@@ -67,10 +67,13 @@ export default function BenefitsCards() {
                   alt={benefit.title}
                   fill
                   className="object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
+                  style={{ borderRadius: "1rem" }} // Fallback to prevent square glitch
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-2xl transition-all duration-500 group-hover:from-black/95 group-hover:via-black/50"></div>
-                <div className="absolute inset-0 bg-[#004080]/0 rounded-2xl transition-all duration-500 group-hover:bg-[#004080]/20"></div>
-                <div className="absolute inset-0 flex flex-col justify-between p-6">
+                {/* Overlays */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-2xl transition-all duration-500 group-hover:from-black/95 group-hover:via-black/50 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-[#004080]/0 rounded-2xl transition-all duration-500 group-hover:bg-[#004080]/20 pointer-events-none"></div>
+                {/* Content */}
+                <div className="absolute inset-0 flex flex-col justify-between p-6 z-10">
                   <div className="flex justify-between items-start">
                     <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all duration-500 group-hover:bg-[#b59b1d] group-hover:scale-110">
                       <div className="text-white transition-colors duration-500 group-hover:text-[#004080]">
@@ -96,7 +99,8 @@ export default function BenefitsCards() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#b59b1d]/50"></div>
+                {/* Border */}
+                <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#b59b1d]/50 pointer-events-none"></div>
               </div>
             </div>
           ))}
