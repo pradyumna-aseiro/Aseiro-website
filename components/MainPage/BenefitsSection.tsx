@@ -61,17 +61,20 @@ export default function BenefitsCards() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
           {benefits.map((benefit, index) => (
             <div key={index} id={benefit.id} className="group">
+              {/* The *container* is responsible for the hover effect and always has rounded-2xl and overflow-hidden */}
               <div className="relative h-80 rounded-2xl overflow-hidden will-change-transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:-translate-y-2">
+                {/* Inner image is always rounded, never animates border radius */}
                 <Image
                   src={benefit.image || "/placeholder.svg"}
                   alt={benefit.title}
                   fill
                   className="object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
-                  style={{ borderRadius: "1rem" }} // Fallback to prevent square glitch
+                  style={{ borderRadius: "1rem" }}
+                  priority={index === 0}
                 />
                 {/* Overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-2xl transition-all duration-500 group-hover:from-black/95 group-hover:via-black/50 pointer-events-none"></div>
-                <div className="absolute inset-0 bg-[#004080]/0 rounded-2xl transition-all duration-500 group-hover:bg-[#004080]/20 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none rounded-2xl"></div>
+                <div className="absolute inset-0 bg-[#004080]/0 pointer-events-none rounded-2xl transition-all duration-500 group-hover:bg-[#004080]/20"></div>
                 {/* Content */}
                 <div className="absolute inset-0 flex flex-col justify-between p-6 z-10">
                   <div className="flex justify-between items-start">
@@ -99,8 +102,8 @@ export default function BenefitsCards() {
                     </div>
                   </div>
                 </div>
-                {/* Border */}
-                <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#b59b1d]/50 pointer-events-none"></div>
+                {/* Border is always rounded, never animates border-radius */}
+                <div className="absolute inset-0 border-2 border-transparent rounded-2xl pointer-events-none transition-all duration-500 group-hover:border-[#b59b1d]/50"></div>
               </div>
             </div>
           ))}

@@ -48,17 +48,20 @@ export default function SolutionsGrid() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
           {solutions.map((solution, index) => (
             <div key={index} id={solution.id} className="group">
+              {/* PARENT: handles rounding, overflow, scale */}
               <div className="relative h-80 rounded-2xl overflow-hidden will-change-transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:-translate-y-2">
+                {/* IMAGE: always rounded-2xl */}
                 <Image
                   src={solution.image}
                   alt={solution.title}
                   fill
                   className="object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
-                  style={{ borderRadius: "1rem" }} // extra fallback
+                  style={{ borderRadius: "1rem" }}
+                  priority={index === 0}
                 />
-                {/* Main overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-2xl transition-all duration-500 group-hover:from-black/95 group-hover:via-black/50 pointer-events-none"></div>
-                <div className="absolute inset-0 bg-[#004080]/0 rounded-2xl transition-all duration-500 group-hover:bg-[#004080]/20 pointer-events-none"></div>
+                {/* Overlays: always rounded-2xl */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none rounded-2xl"></div>
+                <div className="absolute inset-0 bg-[#004080]/0 pointer-events-none rounded-2xl transition-all duration-500 group-hover:bg-[#004080]/20"></div>
                 {/* Content */}
                 <div className="absolute inset-0 flex flex-col justify-between p-6 z-10">
                   <div className="flex justify-between items-start">
@@ -86,19 +89,18 @@ export default function SolutionsGrid() {
                     </div>
                   </div>
                 </div>
-                {/* Border outline */}
-                <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#b59b1d]/50 pointer-events-none"></div>
+                {/* BORDER: always rounded-2xl */}
+                <div className="absolute inset-0 border-2 border-transparent rounded-2xl pointer-events-none transition-all duration-500 group-hover:border-[#b59b1d]/50"></div>
               </div>
             </div>
           ))}
         </div>
-        {/* Centered Learn More button */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
           <Button
             size="lg"
             variant="outline"
             asChild
-            className="border-white text-white hover:bg-[#b59b1d] hover:text-[#004080] bg-black/80 rounded-full px-8 py-3 transition-all duration-300"
+            className="border-white text-white hover:bg-[#b59b1d] hover:text-[#004080] bg-black/80 backdrop-blur-sm rounded-full font-semibold tracking-wide transition-all"
           >
             <Link href="/solutions">
               <Target className="mr-2 h-5 w-5" />
