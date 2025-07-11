@@ -11,7 +11,8 @@ const caseStudies = [
     tags: ["Machine Vision"],
     applications: [
       "Misprint Detection", "Label Rejection", "Inline Quality Control", "Auto Sorting"
-    ]
+    ],
+    video: "https://youtu.be/pZNp5IDjqUM"
   },
   {
     title: "Tablet Presence/Absence Inspection",
@@ -20,7 +21,8 @@ const caseStudies = [
     tags: ["Machine Vision"],
     applications: [
       "Tablet Counting", "Missing Tablet Detection", "Blister Pack Inspection"
-    ]
+    ],
+    video: "https://youtu.be/8tXxO9Wd_yU"
   },
   {
     title: "Bottle Level Inspection",
@@ -29,7 +31,8 @@ const caseStudies = [
     tags: ["Machine Vision"],
     applications: [
       "Fill Level Control", "Leak Detection", "Cap Presence", "Fast Throughput"
-    ]
+    ],
+    video: "https://youtu.be/S5xQMhQtwOs",
   },
   {
     title: "Needle Roller Bearing Inspection",
@@ -38,7 +41,8 @@ const caseStudies = [
     tags: ["Machine Vision"],
     applications: [
       "Diameter Measurement", "Surface Defect Detection", "Automated Sorting"
-    ]
+    ],
+    video: "https://youtu.be/HEMnWzmgZ_c"
   },
   {
     title: "Injection Moulded Caps Inspection & Rejection",
@@ -48,6 +52,7 @@ const caseStudies = [
     applications: [
       "Cap Defect Detection", "Orientation Check", "Color/Print Verification"
     ]
+    // No video yet
   },
   {
     title: "Stirrup Rebar Bending Machine Automation",
@@ -57,6 +62,7 @@ const caseStudies = [
     applications: [
       "Automatic Bending", "Batch Programming", "High Torque Control"
     ]
+    // No video yet
   },
   {
     title: "Wire Crimping Machine Automation",
@@ -66,6 +72,7 @@ const caseStudies = [
     applications: [
       "Wire Cutting", "Crimp Detection", "Length Measurement", "Batch Handling"
     ]
+    // No video yet
   },
   {
     title: "Material Handling for Rebar Bending",
@@ -75,6 +82,7 @@ const caseStudies = [
     applications: [
       "Conveyor Control", "Automated Transfer", "Sensor Integration"
     ]
+    // No video yet
   }
 ];
 
@@ -86,10 +94,9 @@ export default function CaseStudiesGrid() {
           <span className="text-[#b59b1d]">Case Studies</span> by Aseiro
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {caseStudies.map((study, idx) => (
-            // <a href={`/case-studies/${study.slug}`} key={idx} className="group">
-            <div key={idx} className="group cursor-pointer">
-              <div className="relative h-80 rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:-translate-y-2">
+          {caseStudies.map((study, idx) => {
+            const CardContent = (
+              <div className="relative h-80 rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:-translate-y-2 font-sans">
                 <Image
                   src={study.image}
                   alt={study.title}
@@ -109,7 +116,7 @@ export default function CaseStudiesGrid() {
                 </div>
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent transition-all duration-500 group-hover:from-black/90 group-hover:via-black/40 rounded-2xl"></div>
-                <div className="absolute inset-0 flex flex-col justify-end p-6">
+                <div className="absolute inset-0 flex flex-col justify-end p-6 font-sans">
                   <h3 className="text-xl font-semibold text-white mb-2">{study.title}</h3>
                   <p className="text-white text-sm mb-2">{study.description}</p>
                   <div className="flex flex-wrap gap-2">
@@ -126,9 +133,24 @@ export default function CaseStudiesGrid() {
                 </div>
                 <div className="absolute inset-0 border-2 border-transparent rounded-2xl transition-all duration-500 group-hover:border-[#b59b1d]/80"></div>
               </div>
-            </div>
-            // </a>
-          ))}
+            );
+            return study.video ? (
+              <a
+                key={idx}
+                href={study.video}
+                className="group cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Watch case study video"
+              >
+                {CardContent}
+              </a>
+            ) : (
+              <div key={idx} className="group cursor-default">
+                {CardContent}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
