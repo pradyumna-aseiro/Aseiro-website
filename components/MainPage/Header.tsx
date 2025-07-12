@@ -65,12 +65,6 @@ export default function Header() {
                 Get Started
               </Button>
             </Link>
-            <Link
-              href="/contact"
-              className="font-semibold text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition-colors duration-200 ml-4"
-            >
-              Get Consultation
-            </Link>
           </div>
         </div>
       </div>

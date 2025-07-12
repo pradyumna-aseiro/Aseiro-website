@@ -23,13 +23,6 @@ export default function CTASection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
             size="lg"
-            className="bg-[#b59b1d] hover:bg-[#b59b1d]/90 text-[#004080] px-8 py-4 text-base font-medium"
-          >
-            Book Free Consultation
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-          <Button
-            size="lg"
             variant="outline"
             className="border-white text-white hover:bg-white hover:text-[#004080] px-8 py-4 text-base bg-transparent"
           >
