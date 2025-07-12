@@ -24,7 +24,7 @@ export default function VideoHero() {
       <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-32">
         <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">AUTOMATION & MACHINE VISION</p>
         <h1 className="text-5xl lg:text-7xl font-light text-white mb-4 leading-tight">
-          India's Leading <span className="text-[#b59b1d]">Machine Vision</span>
+          India's Leading <span className="text-[#b59b1d]">Machine Vision </span>
           & Automation Solutions
         </h1>
         <p className="text-xl text-gray-200 mb-8 font-medium">
