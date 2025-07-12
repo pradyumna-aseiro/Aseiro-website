@@ -4,8 +4,8 @@ import CaseStudiesHero from "@/components/CaseStudiesPage/CaseStudiesHero";
 import CaseStudiesCards from "@/components/CaseStudiesPage/CaseStudiesCards";
 
 export const metadata = {
-  title: "Case Studies – Quality Inspection & Automation Success | Aseiro",
-  description: "See how Aseiro's machine vision and automation systems improved quality and efficiency for manufacturers across the UK and India.",
+  title: "Case Studies – Automation & Machine Vision India | Aseiro",
+  description: "See how Aseiro's machine vision and automation systems improved quality and efficiency for manufacturers across India and the UK.",
 };
 
 export default function CaseStudiesPage() {

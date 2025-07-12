@@ -22,16 +22,13 @@ export default function SolutionsHero() {
         {/* Content */}
         <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-32">
           <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">OUR SOLUTIONS</p>
-          <h1 className="text-5xl lg:text-7xl font-light text-white mb-8 leading-tight">
-            Comprehensive
-            <br />
-            <span className="text-[#b59b1d]">Automation</span> Solutions
+          <h1 className="text-5xl lg:text-7xl font-light text-white mb-4 leading-tight">
+            Comprehensive Automation Solutions for Quality Inspection
           </h1>
-          <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
-            From machine vision systems to complete turnkey automation, we deliver cutting-edge technology that transforms manufacturing processes across industries.
+          <p className="text-xl text-gray-200 mb-8">
+            From machine vision systems to complete turnkey automation for quality inspection, we deliver cutting-edge technology that transforms manufacturing processes across industries.
           </p>
         </div>
       </section>
     );
   }
-  

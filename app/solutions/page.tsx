@@ -6,8 +6,8 @@ import SolutionsBenefits from "@/components/SolutionsPage/SolutionsBenefits";
 import SolutionsCTA from "@/components/SolutionsPage/SolutionsCTA";
 
 export const metadata = {
-  title: "Industrial Automation & Machine Vision Solutions | Aseiro UK & India",
-  description: "Discover Aseiro's comprehensive automation, robotics, and machine vision solutions for quality inspection and manufacturing in the UK and India.",
+  title: "Automation & Machine Vision Solutions India | Aseiro (Now in UK)",
+  description: "Explore Aseiro’s automation and machine vision solutions for quality inspection, robotics, and manufacturing. India's trusted provider, now expanding to the UK.",
 };
 
 export default function SolutionsPage() {

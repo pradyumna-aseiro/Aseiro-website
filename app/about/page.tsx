@@ -7,8 +7,8 @@ import GlobalPresence from "@/components/MainPage/GlobalPresence";
 import MeetTheTeam from "@/components/AboutPage/MeetTheTeam";
 
 export const metadata = {
-  title: "About Aseiro – Automation & Machine Vision Experts UK & India",
-  description: "Learn about Aseiro's expertise in machine vision, robotics, and automation. Trusted provider for quality inspection in the UK and India.",
+  title: "About Aseiro – India's Machine Vision & Automation Experts (Now in UK)",
+  description: "Learn about Aseiro's expertise in machine vision, robotics, and automation. Trusted Indian provider for quality inspection, now expanding to the UK.",
 };
 
 export default function AboutPage() {

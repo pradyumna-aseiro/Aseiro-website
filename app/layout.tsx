@@ -7,10 +7,11 @@ import Script from "next/script"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Aseiro Industries - Automation & Machine Vision Solutions",
+  title: "Aseiro Industries – India's Leading Machine Vision & Automation Solutions (Now in UK)",
   description:
-    "Global provider of automation and machine vision solutions for modern manufacturing. Transform your production with intelligent systems.",
-  generator: 'v0.dev'
+    "Aseiro Industries is India's top provider of machine vision and industrial automation solutions for manufacturing, quality inspection, and robotics integration. Now expanding to the UK market.",
+  generator: 'v0.dev',
+  viewport: "width=device-width, initial-scale=1.0"
 }
 
 export default function RootLayout({
@@ -34,8 +35,13 @@ export default function RootLayout({
             gtag('config', 'G-DYETLZSGMZ');
           `}
         </Script>
-        <title>Industrial Machine Vision & Quality Inspection Automation | Aseiro UK & India</title>
-        <meta name="description" content="Aseiro provides machine vision, quality inspection, and automation solutions for manufacturers in the UK and India. Eliminate defects, boost productivity, and ensure compliance." />
+        <title>
+          Aseiro Industries – India's Leading Machine Vision & Automation Solutions (Now in UK)
+        </title>
+        <meta
+          name="description"
+          content="Aseiro Industries is India's top provider of machine vision and industrial automation solutions for manufacturing, quality inspection, and robotics integration. Now expanding to the UK market."
+        />
         {/* Structured Data for Organization and LocalBusiness */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -56,7 +62,7 @@ export default function RootLayout({
             "name": "Aseiro Industries UK",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Sheffield",
+              "streetAddress": "London",
               "addressCountry": "UK"
             },
             "telephone": "+44-7825-031261"

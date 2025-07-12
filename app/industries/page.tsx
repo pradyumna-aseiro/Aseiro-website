@@ -6,8 +6,8 @@ import IndustryStats from "@/components/IndustriesPage/IndustriesStats";
 import IndustryCTA from "@/components/IndustriesPage/IndustriesCTA";
 
 export const metadata = {
-  title: "Industries Served – Machine Vision & Automation | Aseiro",
-  description: "Aseiro delivers machine vision and automation solutions for pharma, automotive, electronics, and more. Serving manufacturers in the UK and India.",
+  title: "Industries Served – Machine Vision & Automation India | Aseiro",
+  description: "Aseiro delivers machine vision and automation solutions for pharma, automotive, electronics, food, and more. Leading Indian provider, now serving the UK.",
 };
 
 export default function IndustriesPage() {

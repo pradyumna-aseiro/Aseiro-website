@@ -20,6 +20,9 @@ export default function CaseStudiesHero() {
     {/* Content */}
     <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-40">
     <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">APPLICATIONS</p>
+    <h1 className="text-4xl md:text-5xl font-light text-gray-900 mb-10">
+      Case Studies: Machine Vision & Automation Success Stories
+    </h1>
     <h1 className="text-5xl lg:text-7xl font-light text-white mb-8 leading-tight">
         ASEIRO's <span className="text-[#b59b1d]">Case Studies</span>
     </h1>
