@@ -50,8 +50,37 @@ export default function RootLayout({
             "name": "Aseiro Industries",
             "url": "https://aseiro.com",
             "logo": "https://aseiro.com/aseiro-logo-main.png",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+91-7893-715471",
+                "contactType": "Customer Support",
+                "areaServed": "IN",
+                "availableLanguage": "en"
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+44-7825-031261",
+                "contactType": "Customer Support",
+                "areaServed": "UK",
+                "availableLanguage": "en"
+              }
+            ],
             "sameAs": [
-              "https://linkedin.com/company/aseiro-industries"
+              "https://linkedin.com/company/aseiro-industries",
+              "https://www.youtube.com/@AseiroIndustriesPvtLtd"
+            ],
+            "address": [
+              {
+                "@type": "PostalAddress",
+                "streetAddress": "Hyderabad",
+                "addressCountry": "India"
+              },
+              {
+                "@type": "PostalAddress",
+                "streetAddress": "London",
+                "addressCountry": "UK"
+              }
             ]
           })
         }} />
