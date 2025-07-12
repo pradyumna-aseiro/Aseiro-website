@@ -23,7 +23,7 @@ export default function ContactHero() {
           <br />
           <span className="text-[#b59b1d]">Automation</span> Needs
       </h1>
-      <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+      <p className="text-xl text-[#b59b1d] mb-8 font-medium">
         Ready to transform your manufacturing processes? Our team of experts is here to help you find the perfect
         automation solution for your business.
       </p>

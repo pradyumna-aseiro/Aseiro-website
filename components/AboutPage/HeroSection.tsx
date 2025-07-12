@@ -25,9 +25,9 @@ export default function HeroSection() {
         <br />
         of <span className="text-[#b59b1d]">Manufacturing</span>
     </h1>
-    <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
-    Founded with a vision to revolutionize manufacturing through intelligent automation, Aseiro Industries is 
-    a pioneer in machine vision and robotics solutions.
+    <p className="text-xl text-[#b59b1d] mb-8 font-medium">
+      Founded with a vision to revolutionize manufacturing through intelligent automation, Aseiro Industries is 
+      a pioneer in machine vision and robotics solutions.
     </p>
     </div>
     </section>

@@ -1,27 +1,12 @@
 import { Eye, Cog, Zap, CheckCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function SolutionsDetails() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">SOLUTION DETAILS</p>
-          <h2 className="text-3xl lg:text-4xl font-light text-gray-900 mb-6">
-            Deep Dive into Our
-            <br />
-            <span className="text-[#b59b1d]">Core Technologies</span>
-          </h2>
-          <p className="text-base text-gray-700 mt-6">
-            Want to see our solutions in action?{" "}
-            <Link href="/case-studies" className="underline text-blue-700 hover:text-blue-900">
-              View our Case Studies
-            </Link>
-            {" "}to learn how Aseiro helped manufacturers achieve quality and efficiency.
-          </p>
-        </div>
-
         <div className="space-y-20">
           {/* Machine Vision Detail */}
           <div id="machine-vision" className="grid lg:grid-cols-2 gap-16 items-center">
@@ -133,6 +118,27 @@ export default function SolutionsDetails() {
                 className="rounded-2xl shadow-xl"
               />
             </div>
+          </div>
+
+          <div className="text-center mb-16">
+            <p className="text-sm uppercase tracking-wider text-gray-500 mb-4">SOLUTION DETAILS</p>
+            <h2 className="text-3xl lg:text-4xl font-light text-gray-900 mb-6">
+              Deep Dive into Our
+              <br />
+              <span className="text-[#b59b1d]">Core Technologies</span>
+            </h2>
+            <p className="text-base text-gray-700 mt-6">
+              Want to see our solutions in action? 
+              View our Case Studies to learn how Aseiro helped 
+              manufacturers achieve quality and efficiency.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild className="bg-blue-600 hover:bg-blue-700">
+              <Link href="/case-studies">
+                Explore Case Studies
+              </Link>
+            </Button>
           </div>
         </div>
       </div>
