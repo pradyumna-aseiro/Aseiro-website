@@ -1,5 +1,6 @@
 import { Eye, Cog, Zap, CheckCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SolutionsDetails() {
   return (
@@ -12,6 +13,13 @@ export default function SolutionsDetails() {
             <br />
             <span className="text-[#b59b1d]">Core Technologies</span>
           </h2>
+          <p className="text-base text-gray-700 mt-6">
+            Want to see our solutions in action?{" "}
+            <Link href="/case-studies" className="underline text-blue-700 hover:text-blue-900">
+              View our Case Studies
+            </Link>
+            {" "}to learn how Aseiro helped manufacturers achieve quality and efficiency.
+          </p>
         </div>
 
         <div className="space-y-20">

@@ -5,6 +5,11 @@ import ContactForm from "@/components/ContactPage/ContactForm";
 import ContactInfo from "@/components/ContactPage/ContactInfo";
 import ContactCTA from "@/components/ContactPage/ContactCTA";
 
+export const metadata = {
+  title: "Contact Aseiro – Machine Vision & Automation Solutions UK & India",
+  description: "Contact Aseiro for industrial automation, machine vision, and quality inspection solutions in the UK and India. Offices in Sheffield & Hyderabad.",
+};
+
 export default function ContactPage() {
   return (
     <div className="font-sans bg-white">

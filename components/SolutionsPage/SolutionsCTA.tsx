@@ -16,15 +16,13 @@ export default function SolutionsCTA() {
           Let our experts design a custom automation solution tailored to your specific requirements and industry standards.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/contact">
-            <Button
-              size="lg"
-              className="bg-[#b59b1d] hover:bg-[#b59b1d]/90 text-[#004080] px-8 py-4 text-base font-medium"
-            >
-              Request Consultation
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link>
+          <Button
+            size="lg"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold"
+            asChild
+          >
+            <Link href="/contact">Get Consultation</Link>
+          </Button>
           <Link href="/case-studies">
             <Button
               size="lg"

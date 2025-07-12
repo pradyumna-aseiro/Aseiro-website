@@ -9,7 +9,7 @@ export default function IndustriesCTA() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-sm uppercase tracking-wider text-gray-200 mb-4">GET STARTED</p>
         <h2 className="text-3xl lg:text-4xl font-light text-white mb-8 leading-tight">
-          Ready to <span className="text-[#b59b1d]">Tranform</span> <br />Your Industry?
+          Ready to <span className="text-[#b59b1d]">Transform</span> <br />Your Industry?
         </h2>
         <p className="text-xl text-gray-200 mb-12">
           Let our experts design a custom automation solution tailored to your industry’s challenges.

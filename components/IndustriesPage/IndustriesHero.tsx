@@ -25,6 +25,7 @@ export default function IndustriesHero() {
         <br />
         for Every <span className="text-[#b59b1d]">Industry</span>
     </h1>
+    <h2 className="text-3xl font-medium text-white mb-6">Ready to Transform Your Industry?</h2>
     <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
         From pharmaceutical precision to logistics speed, we deliver automation solutions
         tailored for each sector, compliance, reliability, and maximum ROI.

@@ -2,6 +2,7 @@
 
 import { ArrowRight, Pill, Car, Coffee, Cpu, Building2, Wheat, CheckCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const industries = [
   {
@@ -113,6 +114,13 @@ export default function IndustriesGrid() {
             </div>
           ))}
         </div>
+        <p className="text-base text-gray-700 mt-6">
+          See how we've delivered results for your sector in our{" "}
+          <Link href="/case-studies" className="underline text-blue-700 hover:text-blue-900">
+            Case Studies
+          </Link>
+          .
+        </p>
       </div>
     </section>
   )

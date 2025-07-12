@@ -16,7 +16,13 @@ export default function Footer() {
               className="h-10 w-auto mb-6"
             />
             <p className="text-gray-600 text-sm leading-relaxed">
-              Global provider of automation and machine vision solutions for modern manufacturing.
+              Global provider of automation and 
+              <br /> machine vision solutions 
+              <br /> for modern manufacturing.
+            </p>
+            <p className="text-gray-500 text-xs mt-4">
+              Offices in Sheffield, UK & Hyderabad, India.{" "}
+              <Link href="/about" className="underline hover:text-[#004080]">About Aseiro</Link>
             </p>
           </div>
           <div>
@@ -41,9 +47,44 @@ export default function Footer() {
           <div>
             <h3 className="font-medium text-gray-900 mb-4">Contact</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="text-gray-600 hover:text-[#004080]">About Us</Link></li>
-              <li><Link href="/contact" className="text-gray-600 hover:text-[#004080]">Get in Touch</Link></li>
-              <li><Link href="/case-studies" className="text-gray-600 hover:text-[#004080]">Case Studies</Link></li>
+              <li>
+                <a href="tel:+447825031261" className="text-gray-600 hover:text-[#004080]">
+                  +44 7825 031261 (UK)
+                </a>
+              </li>
+              <li>
+                <a href="tel:+917893715471" className="text-gray-600 hover:text-[#004080]">
+                  +91 7893 715471 (India)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/917893715471"
+                  className="text-green-600 hover:text-green-800"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp India
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/447825031261"
+                  className="text-green-600 hover:text-green-800"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp UK
+                </a>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="font-semibold text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition-colors duration-200 block w-fit"
+                >
+                  Get Consultation
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

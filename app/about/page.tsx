@@ -6,7 +6,10 @@ import WhatSetsUsApart from "@/components/AboutPage/WhatSetsUsApart";
 import GlobalPresence from "@/components/MainPage/GlobalPresence";
 import MeetTheTeam from "@/components/AboutPage/MeetTheTeam";
 
-// import Header, Footer, TopBar as you normally do
+export const metadata = {
+  title: "About Aseiro – Automation & Machine Vision Experts UK & India",
+  description: "Learn about Aseiro's expertise in machine vision, robotics, and automation. Trusted provider for quality inspection in the UK and India.",
+};
 
 export default function AboutPage() {
   return (

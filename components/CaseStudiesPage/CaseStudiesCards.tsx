@@ -99,7 +99,7 @@ export default function CaseStudiesGrid() {
               <div className="relative h-80 rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:-translate-y-2 font-sans">
                 <Image
                   src={study.image}
-                  alt={study.title}
+                  alt={`Case study: ${study.title} – ${study.description}`}
                   fill
                   className="object-cover transition-transform duration-700 rounded-2xl group-hover:scale-110"
                 />

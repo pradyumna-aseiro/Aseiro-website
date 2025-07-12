@@ -4,7 +4,7 @@ import { Handshake, Award, Lightbulb, ShieldCheck } from "lucide-react";
 
 const partners = [
   { name: "VAP", logo: "/Partners/vap.png", alt: "Vinayak Automation Products logo" },
-  { name: "L&T", logo: "/Partners/lnt.png", alt: "Larson and Turbo logo" },
+  { name: "L&T", logo: "/Partners/lnt.png", alt: "Larson and Toubro logo" },
   { name: "Hikrobot", logo: "/Partners/hikrobot.png", alt: "Hikrobot logo" },
   { name: "NRB", logo: "/Partners/nrb.png", alt: "NRB logo" }
 ];

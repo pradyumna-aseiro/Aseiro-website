@@ -59,11 +59,19 @@ export default function Header() {
               );
             })}
           </nav>
-          <Link href="/contact">
-            <Button className="bg-[#004080] hover:bg-[#004080]/90 text-white px-6 py-2 text-sm font-medium">
-              Get Started
-            </Button>
-          </Link>
+          <div className="flex items-center">
+            <Link href="/contact">
+              <Button className="bg-[#004080] hover:bg-[#004080]/90 text-white px-6 py-2 text-sm font-medium">
+                Get Started
+              </Button>
+            </Link>
+            <Link
+              href="/contact"
+              className="font-semibold text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition-colors duration-200 ml-4"
+            >
+              Get Consultation
+            </Link>
+          </div>
         </div>
       </div>
     </header>
